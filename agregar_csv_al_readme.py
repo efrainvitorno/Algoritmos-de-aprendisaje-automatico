@@ -1,11 +1,15 @@
 import pandas as pd
 
 # Carga el archivo CSV
-csv_file = 'Resultados por mesa de la Revocatoria_Distrital.csv'  # Cambia por la ruta de tu archivo CSV
+csv_file = 'archivo.csv'  # Cambia por la ruta de tu archivo CSV
 df = pd.read_csv(csv_file)
 
 # Convierte el DataFrame a una tabla Markdown
-markdown_table = df.to_markdown(index=False)
+try:
+    from tabulate import tabulate
+    markdown_table = tabulate(df, headers='keys', tablefmt='pipe', showindex=False)
+except ImportError:
+    raise ImportError("Por favor instala la biblioteca 'tabulate' con: pip install tabulate")
 
 # Guarda la tabla Markdown en el README.md
 with open('README.md', 'a') as f:  # Modo 'a' para agregar al final del archivo existente
