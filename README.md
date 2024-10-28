@@ -8,4 +8,5 @@
 | --------------| ------- | ----------- |
 | 160337        | Efrain Vitorino Marin         |
 | 215948        | Jose Francisco Quentasi Juachin |
+| 210940        | Jhon Esau Pumachoque Choquenaira |
 
