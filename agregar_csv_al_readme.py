@@ -2,7 +2,7 @@ import pandas as pd
 
 # Carga el archivo CSV
 csv_file = 'archivo.csv'  # Cambia por la ruta de tu archivo CSV
-df = pd.read_csv(csv_file, sep=';')
+df = pd.read_csv(csv_file)
 
 # Convierte el DataFrame a una tabla Markdown
 try:
