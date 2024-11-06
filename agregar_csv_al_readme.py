@@ -2,7 +2,7 @@ import pandas as pd
 
 # Carga el archivo CSV con el delimitador adecuado (puedes cambiar ';' si es diferente)
 csv_file = 'archivo.csv'  # Cambia por la ruta de tu archivo CSV
-df = pd.read_csv(csv_file, sep=';')  # Especifica el separador como ';'
+df = pd.read_csv(csv_file, sep=';')
 
 # Convierte el DataFrame a una tabla Markdown
 try:
