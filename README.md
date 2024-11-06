@@ -1,6 +1,6 @@
 
-# T√≠tulo del Proyecto
-# "An√°lisis de Resultados de la Consulta Popular de Revocatoria del Mandato de Autoridades Municipales Distritales (2001)
+# TÌ≠tulo del Proyecto
+# "An·lisis de Resultados de la Consulta Popular de Revocatoria del Mandato de Autoridades Municipales Distritales (2001)
 # integrantes
 
 
