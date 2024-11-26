@@ -64,7 +64,7 @@ plt.legend()
 plt.xlabel("Promedios")
 plt.ylabel("Frecuencia")
 plt.title("Comparación de histogramas (muestra 5 vs 50)")
-plt.savefig('histogramas.png')
+plt.savefig('VariablesAleatorias/histogramas.png')
 plt.close()
 resultados.append("**Respuesta:** B) Ambos se ven más o menos normales, pero con un tamaño de muestra de 50, la dispersión es menor.")
 
@@ -80,7 +80,7 @@ prob_normal = norm.cdf(rango[1], mu, sigma) - norm.cdf(rango[0], mu, sigma)
 resultados.append(f"**Ejercicio 8:** Porcentaje esperado para distribución normal en rango 23-25: **{prob_normal * 100:.2f}%**")
 
 # Escribir resultados en README.md
-with open("README.md", "w") as f:
+with open("VariablesAleatorias/README.md", "w", encoding="utf-8") as f:
     f.write("# Resultados de Análisis de Votos\n\n")
     f.write("Este documento presenta los resultados del análisis de los votos totales en el dataset proporcionado.\n\n")
     for resultado in resultados:
