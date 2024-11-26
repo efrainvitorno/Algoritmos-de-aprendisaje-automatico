@@ -11,7 +11,7 @@ try:
 except ImportError:
     raise ImportError("Por favor instala la biblioteca 'tabulate' con: pip install tabulate")
 
-# Guarda la tabla Markdown en el README.md
+# Guarda la tabla Markdwn en el README.md
 with open('README.md', 'a', encoding='utf-8') as f:  # Modo 'a' para agregar al final del archivo existente
     f.write("\n## Contenido del archivo CSV\n\n")  # Agrega un título para la tabla
     f.write(markdown_table + "\n")
