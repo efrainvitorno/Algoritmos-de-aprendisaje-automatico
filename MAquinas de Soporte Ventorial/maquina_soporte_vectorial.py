@@ -60,21 +60,33 @@ try:
     plt.savefig('confusion_matrix.png')
     plt.close()
 
-    # Guardar resultados en README
-    readme_path = 'MAquinas de Soporte Ventorial\README.md'
+    # Modificar la sección de escritura del README:
+    readme_path = 'MAquinas de Soporte Ventorial/README.md'
+    os.makedirs(os.path.dirname(readme_path), exist_ok=True)
+
     with open(readme_path, 'w', encoding='utf-8') as f:
+        # Encabezado
         f.write("# Análisis de Máquina de Soporte Vectorial\n\n")
+        
+        # Descripción del dataset
         f.write("## Descripción del Dataset\n")
-        f.write(f"Total de registros: {len(data)}\n")
-        f.write("## Resultados del Modelo SVM\n\n")
-        f.write("### Métricas de Rendimiento\n")
-        f.write("```\n")
-        f.write(f"{classification_report_str}\n")
-        f.write("```\n\n")
-        f.write("### Exactitud del Modelo\n")
-        f.write(f"{accuracy_score_str}\n\n")
-        f.write("### Matriz de Confusión\n")
-        f.write("![Matriz de Confusión](confusion_matrix.png)\n")
+        f.write(f"Total de registros: {len(data)}\n\n")
+        
+        # Resultados con kernel lineal
+        f.write("## Resultados con kernel 'linear'\n")
+        model_linear = SVC(kernel='linear', random_state=42)
+        model_linear.fit(X_train, y_train)
+        y_pred_linear = model_linear.predict(X_test)
+        accuracy_linear = accuracy_score(y_test, y_pred_linear)
+        f.write(f"Precisión: {accuracy_linear:.4f}\n\n")
+        
+        # Resultados con kernel RBF
+        f.write("## Resultados con kernel 'rbf'\n")
+        model_rbf = SVC(kernel='rbf', random_state=42)
+        model_rbf.fit(X_train, y_train)
+        y_pred_rbf = model_rbf.predict(X_test)
+        accuracy_rbf = accuracy_score(y_test, y_pred_rbf)
+        f.write(f"Precisión: {accuracy_rbf:.4f}\n\n")
 
     print("\nProceso completado exitosamente!")
     print(f"Los resultados han sido guardados en {os.path.abspath(readme_path)}")
