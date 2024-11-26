@@ -637,3 +637,4 @@
 |   250203 | UCAYALI        | PADRE ABAD              | CURIMANA                  | LADISLAO OBREGON DIAZ                          |        1126 |        510 |        207 |             108 |            33 |                  0 |           858 |
 |   250203 | UCAYALI        | PADRE ABAD              | CURIMANA                  | LINO RIMACHI MOZOMBITE                         |        1126 |        447 |        166 |              88 |           155 |                  0 |           856 |
 |   250203 | UCAYALI        | PADRE ABAD              | CURIMANA                  | LISETH RAMIREZ MARIN                           |        1126 |        519 |        208 |             118 |            13 |                  0 |           858 |
+-
