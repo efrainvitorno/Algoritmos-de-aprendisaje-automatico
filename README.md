@@ -5,7 +5,8 @@
 
 | Codigo        | Nombres | ----------- |
 | --------------| ------- | ----------- |
-| 160337        | Efrain Vitorino Marin   
+| 160337        | Efrain Vitorino Marin |
+| 215948        | Jose Francisco Quentasi Juachin |  
 
 ## Contenido del archivo CSV
 
