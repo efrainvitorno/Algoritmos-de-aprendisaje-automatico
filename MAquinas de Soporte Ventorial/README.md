@@ -17,12 +17,16 @@ El dataset utilizado contiene información sobre votos en diferentes distritos. 
 
 ## Resultados con kernel 'linear'
 Precisión: 0.5882
+La precisión indica el porcentaje de predicciones correctas realizadas por el modelo con un kernel lineal.
 
 ## Resultados con kernel 'rbf'
 Precisión: 0.2620
+La precisión indica el porcentaje de predicciones correctas realizadas por el modelo con un kernel RBF.
 
 ## Resultados con kernel 'rbf' y diferentes valores de C
 Precisión con kernel 'rbf' y C=0.1: 0.0000
 Precisión con kernel 'rbf' y C=1: 0.2620
 Precisión con kernel 'rbf' y C=10: 0.6417
 Precisión con kernel 'rbf' y C=100: 0.6364
+La precisión indica el porcentaje de predicciones correctas realizadas por el modelo con un kernel RBF y diferentes valores del parámetro C.
+El parámetro C controla la penalización de los errores de clasificación. Valores más altos de C intentan clasificar correctamente todos los puntos de entrenamiento, mientras que valores más bajos permiten más errores de clasificación.

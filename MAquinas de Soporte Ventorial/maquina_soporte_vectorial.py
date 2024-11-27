@@ -81,16 +81,20 @@ with open(readme_path, 'w', encoding='utf-8') as f:
     
     # Resultados con kernel lineal
     f.write("## Resultados con kernel 'linear'\n")
-    f.write(f"Precisión: {precision_linear:.4f}\n\n")
+    f.write(f"Precisión: {precision_linear:.4f}\n")
+    f.write("La precisión indica el porcentaje de predicciones correctas realizadas por el modelo con un kernel lineal.\n\n")
     
     # Resultados con kernel RBF
     f.write("## Resultados con kernel 'rbf'\n")
-    f.write(f"Precisión: {precision_rbf:.4f}\n\n")
+    f.write(f"Precisión: {precision_rbf:.4f}\n")
+    f.write("La precisión indica el porcentaje de predicciones correctas realizadas por el modelo con un kernel RBF.\n\n")
     
     # Resultados con kernel RBF y diferentes valores de C
     f.write("## Resultados con kernel 'rbf' y diferentes valores de C\n")
     for C, precision_C in resultados_C:
         f.write(f"Precisión con kernel 'rbf' y C={C}: {precision_C:.4f}\n")
+    f.write("La precisión indica el porcentaje de predicciones correctas realizadas por el modelo con un kernel RBF y diferentes valores del parámetro C.\n")
+    f.write("El parámetro C controla la penalización de los errores de clasificación. Valores más altos de C intentan clasificar correctamente todos los puntos de entrenamiento, mientras que valores más bajos permiten más errores de clasificación.\n")
 
 print("\nProceso completado exitosamente!")
 print(f"Los resultados han sido guardados en {os.path.abspath(readme_path)}")
