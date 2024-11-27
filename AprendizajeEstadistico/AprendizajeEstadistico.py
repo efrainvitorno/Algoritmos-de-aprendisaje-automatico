@@ -53,7 +53,7 @@ resultados = f"""
 """
 
 # Guardar los resultados y las predicciones en un archivo .md
-with open("AprendizajeEstadistico\README.md.md", "w") as f:
+with open("AprendizajeEstadistico\README.md", "w") as f:
     f.write(resultados)
 
 # Imprimir los resultados
