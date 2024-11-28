@@ -1,9 +1,15 @@
-   UBIGEO DEPARTAMENTO    PROVINCIA DISTRITO              AUTORIDAD EN CONSULTA  ELECTORES  VOTOS SI  VOTOS NO  VOTOS BLANCOS  VOTOS NULOS  VOTOS IMPUGNADOS  VOTOS TOTAL
-0   10103     AMAZONAS  CHACHAPOYAS   BALSAS  CECILIA DILIBINA GUTIERREZ FEIJOO        495       131       190             16            4                 0          341
-1   10103     AMAZONAS  CHACHAPOYAS   BALSAS      HERMES NICOLAS CULQUE SANCHEZ        495       131       192             15            3                 0          341
-2   10103     AMAZONAS  CHACHAPOYAS   BALSAS          JULIO CESAR BURGA SANCHEZ        495       129       194             15            3                 0          341
-3   10103     AMAZONAS  CHACHAPOYAS   BALSAS      LUIS ALBERTO ZUMAETA ESCOBEDO        495       136       185             17            3                 0          341
-4   10103     AMAZONAS  CHACHAPOYAS   BALSAS        SANTOS TEODORO GARAY ARAUJO        495       128       203              5            5                 0          341
+# Análisis de la Revocatoria
+
+Este proyecto analiza los resultados de la revocatoria distrital utilizando un modelo de KNN.
+
+## Resultados
+
+### Matriz de Confusión
+![Matriz de Confusión](./matriz_confusion.png)
+
+### Gráfico de Precisión
+![Gráfico de Precisión](./precision_grafico.png)
+
 Reporte de clasificación:
                precision    recall  f1-score   support
 
@@ -17,3 +23,5 @@ weighted avg       0.94      0.94      0.94       187
 Matriz de confusión:
  [[ 35   7]
  [  4 141]]
+
+ 
