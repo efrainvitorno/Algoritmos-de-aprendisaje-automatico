@@ -1,0 +1,1 @@
+El valor esperado para la clase 'Revocatoria' es: 0.7754010695187166
