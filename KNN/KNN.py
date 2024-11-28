@@ -38,8 +38,7 @@ y_pred = knn.predict(X_test_scaled)
 # Paso 8: Evaluar el rendimiento del modelo
 print("Reporte de clasificación:\n", classification_report(y_test, y_pred))
 print("Matriz de confusión:\n", confusion_matrix(y_test, y_pred))
-
-# Paso 9: Guardar la matriz de confusión como imagen
+# Paso 9: Guardar la matriz de confusión como imagen dentro de la carpeta KNN
 plt.figure(figsize=(6, 6))
 plt.imshow(confusion_matrix(y_test, y_pred), cmap='Blues', interpolation='nearest')
 plt.title('Matriz de Confusión')
@@ -48,9 +47,9 @@ plt.xlabel('Predicción')
 plt.ylabel('Real')
 plt.xticks([0, 1], ['No Revocatoria', 'Revocatoria'])
 plt.yticks([0, 1], ['No Revocatoria', 'Revocatoria'])
-plt.savefig('matriz_confusion.png')  # Guardar como imagen
+plt.savefig('KNN/matriz_confusion.png')  # Guardar la imagen en la carpeta KNN
 
-# Paso 10: Guardar el gráfico de precisión como imagen
+# Paso 10: Guardar el gráfico de precisión como imagen dentro de la carpeta KNN
 k_values = list(range(1, 21))
 accuracy_scores = []
 
@@ -59,10 +58,10 @@ for k in k_values:
     knn.fit(X_train_scaled, y_train)
     accuracy_scores.append(knn.score(X_test_scaled, y_test))
 
-# Guardar el gráfico de precisión
+# Guardar el gráfico de precisión en la carpeta KNN
 plt.plot(k_values, accuracy_scores, marker='o')
 plt.title('Precisión del modelo KNN para diferentes valores de K')
 plt.xlabel('Número de vecinos (K)')
 plt.ylabel('Precisión')
 plt.grid(True)
-plt.savefig('precision_grafico.png')  # Guardar como imagen
+plt.savefig('KNN/precision_grafico.png')  # Guardar la imagen en la carpeta KNN

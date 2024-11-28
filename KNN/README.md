@@ -5,10 +5,11 @@ Este proyecto analiza los resultados de la revocatoria distrital utilizando un m
 ## Resultados
 
 ### Matriz de Confusión
-![Matriz de Confusión](./matriz_confusion.png)
+![Matriz de Confusión](./KNN/matriz_confusion.png)
 
 ### Gráfico de Precisión
-![Gráfico de Precisión](./precision_grafico.png)
+![Gráfico de Precisión](./KNN/precision_grafico.png)
+
 
 Reporte de clasificación:
                precision    recall  f1-score   support
