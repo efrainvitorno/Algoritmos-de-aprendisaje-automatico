@@ -23,7 +23,7 @@ ax.set_ylabel('Número de Votos', fontsize=12)
 
 # Guardar el gráfico como una imagen en la carpeta 'Regularizacion/resultados'
 plt.tight_layout()  # Ajusta el gráfico para evitar que se corten etiquetas
-plt.savefig('Regularizacion/votos_apilados.png')
+plt.savefig('votos_apilados.png')
 plt.close()
 
 # Crear el contenido en formato Markdown para el archivo README.md
