@@ -96,7 +96,7 @@ plt.xlabel("Feature 1")
 plt.ylabel("Feature 2")
 guardar_imagen("limites_lineal.png")
 guardar_en_readme("### Límites de decisión con kernel 'linear':")
-guardar_en_readme("![Límites de decisión con kernel 'linear'](MaquinaVectorial/limites_lineal.png)")
+guardar_en_readme("![Límites de decisión con kernel 'linear'](limites_lineal.png)")
 
 # Modelo SVM con kernel 'rbf'
 model_rbf_synthetic = SVC(kernel='rbf', C=1)
@@ -111,7 +111,7 @@ plt.xlabel("Feature 1")
 plt.ylabel("Feature 2")
 guardar_imagen("limites_rbf.png")
 guardar_en_readme("### Límites de decisión con kernel 'rbf':")
-guardar_en_readme("![Límites de decisión con kernel 'rbf'](MaquinaVectorial/limites_rbf.png)")
+guardar_en_readme("![Límites de decisión con kernel 'rbf'](limites_rbf.png)")
 
 # Modelo SVM con kernel 'poly'
 model_poly = SVC(kernel='poly', C=1, degree=3)
@@ -126,7 +126,7 @@ plt.xlabel("Feature 1")
 plt.ylabel("Feature 2")
 guardar_imagen("limites_poly.png")
 guardar_en_readme("### Límites de decisión con kernel 'poly':")
-guardar_en_readme("![Límites de decisión con kernel 'poly'](MaquinaVectorial/limites_poly.png)")
+guardar_en_readme("![Límites de decisión con kernel 'poly'](limites_poly.png)")
 
 # Experimentar con diferentes valores de C y kernel 'rbf' en datos sintéticos
 valores_C = [0.1, 1, 10]
@@ -144,7 +144,7 @@ for C in valores_C:
     nombre_imagen = f"limites_rbf_C{C}.png"
     guardar_imagen(nombre_imagen)
     guardar_en_readme(f"### Límites de decisión con kernel 'rbf' y C={C}:")
-    guardar_en_readme(f"![Límites de decisión con kernel 'rbf' y C={C}](MaquinaVectorial/{nombre_imagen})")
+    guardar_en_readme(f"![Límites de decisión con kernel 'rbf' y C={C}](limites_rbf_C{C}.png)")
 
 guardar_en_readme("\n---")
 guardar_en_readme("### Conclusión")
