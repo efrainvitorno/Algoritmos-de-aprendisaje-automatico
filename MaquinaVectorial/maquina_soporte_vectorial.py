@@ -5,21 +5,33 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 from sklearn.datasets import make_blobs
+import os
 
 # Función para guardar resultados en el README.md
 def guardar_en_readme(texto):
-    with open("MaquinaVectorial/README.md", "a") as f:
-        f.write(texto + "\n")
+    try:
+        with open("MaquinaVectorial/README.md", "a", encoding="utf-8") as f:
+            f.write(texto + "\n")
+    except Exception as e:
+        print(f"Error al guardar en README.md: {e}")
 
 # Función para guardar las gráficas
 def guardar_imagen(nombre_imagen):
-    plt.savefig(f"MaquinaVectorial/{nombre_imagen}")
-    plt.close()
+    try:
+        os.makedirs("MaquinaVectorial", exist_ok=True)
+        plt.savefig(f"MaquinaVectorial/{nombre_imagen}")
+        plt.close()
+    except Exception as e:
+        print(f"Error al guardar la imagen {nombre_imagen}: {e}")
 
 # Crear el archivo README.md (limpio) al iniciar
-with open("MaquinaVectorial/README.md", "w") as f:
-    f.write("# Proyecto Maquina Vectorial\n")
-    f.write("Este proyecto explora la clasificación utilizando Máquinas de Vectores de Soporte (SVM) con diferentes kernels y parámetros.\n\n")
+try:
+    os.makedirs("MaquinaVectorial", exist_ok=True)
+    with open("MaquinaVectorial/README.md", "w", encoding="utf-8") as f:
+        f.write("# Proyecto Maquina Vectorial\n")
+        f.write("Este proyecto explora la clasificación utilizando Máquinas de Vectores de Soporte (SVM) con diferentes kernels y parámetros.\n\n")
+except Exception as e:
+    print(f"Error al crear el archivo README.md: {e}")
 
 # Ejercicio 1: Clasificación SVM con el dataset Iris
 guardar_en_readme("## Ejercicio 1: Clasificación SVM con el dataset Iris")
