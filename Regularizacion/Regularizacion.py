@@ -50,7 +50,7 @@ resultados += """
 
 A continuación se presenta un gráfico con la distribución de votos por departamento.
 
-![Gráfico de Votos Apilados](resultados/votos_apilados.png)
+![Gráfico de Votos Apilados](Regularizacion/votos_apilados.png)
 
 ## Conclusión
 
