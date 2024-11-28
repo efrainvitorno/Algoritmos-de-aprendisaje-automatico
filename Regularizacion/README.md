@@ -1,9 +1,9 @@
 
-# Resultados del Análisis
+# Resultados del AnÃ¡lisis
 
-## Análisis de Votos
+## AnÃ¡lisis de Votos
 
-A continuación se muestran los resultados del análisis de los votos por departamento.
+A continuaciÃ³n se muestran los resultados del anÃ¡lisis de los votos por departamento.
 
 ### Resumen de Votos
 
@@ -34,12 +34,12 @@ A continuación se muestran los resultados del análisis de los votos por departam
 | TUMBES | 10413 | 7244 | 2533 | 818 | 21008 |
 | UCAYALI | 12435 | 3237 | 3995 | 925 | 20592 |
 
-### Gráfico de Votos Apilados
+### GrÃ¡fico de Votos Apilados
 
-A continuación se presenta un gráfico con la distribución de votos por departamento.
+A continuaciÃ³n se presenta un grÃ¡fico con la distribuciÃ³n de votos por departamento.
 
-![Gráfico de Votos Apilados](Regularizacion/votos_apilados.png)
+![GrÃ¡fico de Votos Apilados](votos_apilados.png)
 
-## Conclusión
+## ConclusiÃ³n
 
-Los resultados muestran un panorama interesante de la distribución de votos en diversos departamentos. Se observa que algunos departamentos tienen una distribución más balanceada entre los votos a favor y en contra, mientras que otros tienen una diferencia más pronunciada.
+Los resultados muestran un panorama interesante de la distribuciÃ³n de votos en diversos departamentos. Se observa que algunos departamentos tienen una distribuciÃ³n mÃ¡s balanceada entre los votos a favor y en contra, mientras que otros tienen una diferencia mÃ¡s pronunciada.
