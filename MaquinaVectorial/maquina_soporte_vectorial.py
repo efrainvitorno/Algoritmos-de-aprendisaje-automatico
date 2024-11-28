@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
+import pandas as pd
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
-from sklearn.datasets import make_blobs
+from sklearn.datasets import make_blobs, load_iris, load_wine, load_digits
 import os
 
 # Función para guardar resultados en el README.md
@@ -33,13 +33,26 @@ try:
 except Exception as e:
     print(f"Error al crear el archivo README.md: {e}")
 
-# Ejercicio 1: Clasificación SVM con el dataset Iris
-guardar_en_readme("## Ejercicio 1: Clasificación SVM con el dataset Iris")
+# Ejercicio 1: Clasificación SVM con el dataset desde archivo CSV
+guardar_en_readme("## Ejercicio 1: Clasificación SVM con el dataset desde archivo CSV")
 
-# Cargar el dataset Iris (usaremos solo dos clases para simplificar)
-iris = datasets.load_iris()
-X = iris.data[iris.target != 2]  # Seleccionar solo dos clases (0 y 1)
-y = iris.target[iris.target != 2]
+# Cargar el dataset desde archivo CSV
+data = pd.read_csv('archivo.csv', delimiter=';')
+
+# Imprimir las primeras filas del DataFrame para verificar que se ha leído correctamente
+print(data.head())
+
+# Convertir columnas categóricas a numéricas usando one-hot encoding
+data = pd.get_dummies(data, columns=['DEPARTAMENTO', 'PROVINCIA', 'DISTRITO', 'AUTORIDAD EN CONSULTA'])
+
+# Asumiendo que las características están en todas las columnas menos la última
+X = data.iloc[:, :-1].values
+# Asumiendo que las etiquetas están en la última columna
+y = data.iloc[:, -1].values
+
+# Verificar las dimensiones de X e y
+print(f"Dimensiones de X: {X.shape}")
+print(f"Dimensiones de y: {y.shape}")
 
 # Dividir en conjunto de entrenamiento y prueba
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
@@ -145,6 +158,149 @@ for C in valores_C:
     guardar_imagen(nombre_imagen)
     guardar_en_readme(f"### Límites de decisión con kernel 'rbf' y C={C}:")
     guardar_en_readme(f"![Límites de decisión con kernel 'rbf' y C={C}](limites_rbf_C{C}.png)")
+
+guardar_en_readme("\n---")
+
+# Ejercicio 3: Clasificación SVM con el dataset Iris completo y otros datasets
+guardar_en_readme("## Ejercicio 3: Clasificación SVM con el dataset Iris completo y otros datasets")
+
+# Paso 1: Cargar el dataset Iris completo
+iris = load_iris()
+X = iris.data
+y = iris.target
+
+# Paso 2: Dividir el conjunto de datos
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Paso 3: Entrenar un modelo SVM con kernel RBF
+model = SVC(kernel='rbf', C=1, gamma='scale', random_state=42)
+model.fit(X_train, y_train)
+
+# Paso 4: Hacer predicciones y calcular la precisión
+y_pred = model.predict(X_test)
+resultado_iris = accuracy_score(y_test, y_pred)
+guardar_en_readme(f"Precisión multiclase con kernel 'rbf' en dataset Iris: {resultado_iris:.4f}")
+
+# Experimentar con diferentes valores de gamma y observar los resultados
+valores_gamma = [0.01, 0.1, 1, 10]
+guardar_en_readme("\n### Resultados con diferentes valores de gamma en dataset Iris:")
+for gamma in valores_gamma:
+    model = SVC(kernel='rbf', C=1, gamma=gamma, random_state=42)
+    model.fit(X_train, y_train)
+
+    # Hacer predicciones y calcular la precisión
+    y_pred = model.predict(X_test)
+    resultado_gamma = accuracy_score(y_test, y_pred)
+    guardar_en_readme(f"Precisión con kernel 'rbf' y gamma={gamma}: {resultado_gamma:.4f}")
+
+# Probar con otros datasets: Wine y Digits
+guardar_en_readme("\n### Resultados con otros datasets:")
+
+# Dataset Wine
+wine = load_wine()
+X_wine = wine.data
+y_wine = wine.target
+X_train_wine, X_test_wine, y_train_wine, y_test_wine = train_test_split(X_wine, y_wine, test_size=0.3, random_state=42)
+
+model_wine = SVC(kernel='rbf', C=1, gamma='scale', random_state=42)
+model_wine.fit(X_train_wine, y_train_wine)
+y_pred_wine = model_wine.predict(X_test_wine)
+resultado_wine = accuracy_score(y_test_wine, y_pred_wine)
+guardar_en_readme(f"Precisión con dataset 'wine': {resultado_wine:.4f}")
+
+# Dataset Digits
+digits = load_digits()
+X_digits = digits.data
+y_digits = digits.target
+X_train_digits, X_test_digits, y_train_digits, y_test_digits = train_test_split(X_digits, y_digits, test_size=0.3, random_state=42)
+
+model_digits = SVC(kernel='rbf', C=1, gamma='scale', random_state=42)
+model_digits.fit(X_train_digits, y_train_digits)
+y_pred_digits = model_digits.predict(X_test_digits)
+resultado_digits = accuracy_score(y_test_digits, y_pred_digits)
+guardar_en_readme(f"Precisión con dataset 'digits': {resultado_digits:.4f}")
+
+guardar_en_readme("\n---")
+
+# Ejercicio 4: Optimización de Hiperparámetros con GridSearchCV en el dataset archivo.csv
+guardar_en_readme("## Ejercicio 4: Optimización de Hiperparámetros con GridSearchCV en el dataset archivo.csv")
+
+# Paso 1: Cargar el dataset desde archivo CSV
+data = pd.read_csv('archivo.csv', delimiter=';')
+
+# Convertir columnas categóricas a numéricas usando one-hot encoding
+data = pd.get_dummies(data, columns=['DEPARTAMENTO', 'PROVINCIA', 'DISTRITO', 'AUTORIDAD EN CONSULTA'])
+
+# Asumiendo que las características están en todas las columnas menos la última
+X = data.iloc[:, :-1].values
+# Asumiendo que las etiquetas están en la última columna
+y = data.iloc[:, -1].values
+
+# Paso 2: Dividir el conjunto de datos en entrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Parte 1: Optimizar con kernel 'rbf'
+param_grid_rbf = {
+    'C': [0.1, 1, 10, 100],
+    'gamma': [1, 0.1, 0.01, 0.001],
+    'kernel': ['rbf']
+}
+
+# Configurar y entrenar con GridSearchCV para el kernel 'rbf'
+grid_rbf = GridSearchCV(SVC(), param_grid_rbf, refit=True, verbose=2, cv=5)
+grid_rbf.fit(X_train, y_train)
+
+# Mostrar los mejores parámetros y la precisión de la validación cruzada
+mejores_parametros_rbf = grid_rbf.best_params_
+mejor_precision_rbf = grid_rbf.best_score_
+guardar_en_readme(f"\nMejores parámetros para el kernel 'rbf': {mejores_parametros_rbf}")
+guardar_en_readme(f"Mejor precisión en validación cruzada con kernel 'rbf': {mejor_precision_rbf:.4f}")
+
+# Evaluar el mejor modelo en el conjunto de prueba
+best_model_rbf = grid_rbf.best_estimator_
+y_pred_rbf = best_model_rbf.predict(X_test)
+accuracy_rbf = accuracy_score(y_test, y_pred_rbf)
+guardar_en_readme(f"Precisión en el conjunto de prueba con el mejor modelo (kernel='rbf'): {accuracy_rbf:.4f}")
+
+# Parte 2: Cambiar el kernel a 'poly' o 'linear' y analizar los resultados
+param_grid_kernels = {
+    'C': [0.1, 1, 10, 100],
+    'gamma': [1, 0.1, 0.01, 0.001],
+    'kernel': ['linear', 'poly']
+}
+
+# Configurar y entrenar con GridSearchCV para los kernels 'linear' y 'poly'
+grid_kernels = GridSearchCV(SVC(), param_grid_kernels, refit=True, verbose=2, cv=5)
+grid_kernels.fit(X_train, y_train)
+
+# Mostrar los mejores parámetros y la precisión de la validación cruzada
+mejores_parametros_kernels = grid_kernels.best_params_
+mejor_precision_kernels = grid_kernels.best_score_
+guardar_en_readme(f"\nMejores parámetros para los kernels 'linear' o 'poly': {mejores_parametros_kernels}")
+guardar_en_readme(f"Mejor precisión en validación cruzada con kernels 'linear' o 'poly': {mejor_precision_kernels:.4f}")
+
+# Evaluar el mejor modelo en el conjunto de prueba
+best_model_kernels = grid_kernels.best_estimator_
+y_pred_kernels = best_model_kernels.predict(X_test)
+accuracy_kernels = accuracy_score(y_test, y_pred_kernels)
+guardar_en_readme(f"Precisión en el conjunto de prueba con el mejor modelo (kernel='linear' o 'poly'): {accuracy_kernels:.4f}")
+
+# Análisis y Comparación de Resultados
+guardar_en_readme("\n--- Análisis y Comparación de Resultados ---\n")
+guardar_en_readme("Resultados con Kernel 'rbf':")
+guardar_en_readme(f"- Mejores parámetros: {mejores_parametros_rbf}")
+guardar_en_readme(f"- Precisión en validación cruzada: {mejor_precision_rbf:.4f}")
+guardar_en_readme(f"- Precisión en conjunto de prueba: {accuracy_rbf:.4f}\n")
+
+guardar_en_readme("Resultados con Kernels 'linear' o 'poly':")
+guardar_en_readme(f"- Mejores parámetros: {mejores_parametros_kernels}")
+guardar_en_readme(f"- Precisión en validación cruzada: {mejor_precision_kernels:.4f}")
+guardar_en_readme(f"- Precisión en conjunto de prueba: {accuracy_kernels:.4f}\n")
+
+guardar_en_readme("Comentarios:")
+guardar_en_readme("1. La precisión en validación cruzada muestra cómo de bien generaliza el modelo con diferentes configuraciones de hiperparámetros.")
+guardar_en_readme("2. La precisión en el conjunto de prueba permite evaluar la capacidad del mejor modelo para predecir nuevas instancias.")
+guardar_en_readme("3. Comparando los kernels 'rbf', 'linear', y 'poly', puedes observar cuál tiene mejor rendimiento en términos de generalización y precisión.")
 
 guardar_en_readme("\n---")
 guardar_en_readme("### Conclusión")
