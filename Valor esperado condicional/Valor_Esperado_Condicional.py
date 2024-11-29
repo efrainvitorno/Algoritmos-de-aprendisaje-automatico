@@ -52,4 +52,3 @@ with open("Valor esperado condicional/README.md", "w") as f:
 # Imprimir los resultados
 # --------------------------------------------------------------------------------
 print(resultados)
-print("Prueba de conexion")
