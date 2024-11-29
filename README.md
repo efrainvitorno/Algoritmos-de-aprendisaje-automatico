@@ -11,6 +11,43 @@
 | 225426       | Richard Rodriguez Huaylla |
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Contenido del archivo CSV
 
 |   UBIGEO | DEPARTAMENTO   | PROVINCIA               | DISTRITO                  | AUTORIDAD EN CONSULTA                          |   ELECTORES |   VOTOS SI |   VOTOS NO |   VOTOS BLANCOS |   VOTOS NULOS |   VOTOS IMPUGNADOS |   VOTOS TOTAL |
