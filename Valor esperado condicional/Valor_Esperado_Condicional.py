@@ -7,6 +7,18 @@ df = pd.read_csv("archivo.csv", delimiter=";")
 resultados = ""
 
 # --------------------------------------------------------------------------------
+# Concepto de Valor Esperado Condicional
+# --------------------------------------------------------------------------------
+resultados += (
+    "### ¿Qué es el Valor Esperado Condicional?\n\n"
+    "El **Valor Esperado Condicional** (VEC) es una medida estadística que describe la expectativa o el promedio de "
+    "una variable aleatoria, dado que se cumple una condición específica sobre otra variable. En términos más simples, "
+    "es el valor promedio de una variable cuando conocemos algo sobre otra. El VEC se usa en muchos campos como la "
+    "economía, las ciencias sociales y las ciencias políticas para analizar cómo cambia una variable bajo ciertas "
+    "circunstancias.\n\n"
+)
+
+# --------------------------------------------------------------------------------
 # Cálculo 1: VEC de VOTOS TOTAL dado ELECTORES > 1000
 # --------------------------------------------------------------------------------
 condicion_votos_total = df[df['ELECTORES'] > 1000]['VOTOS TOTAL']
@@ -15,12 +27,14 @@ valor_esperado_condicional_votos_total = condicion_votos_total.mean()
 # Guardamos el resultado con explicación detallada
 resultados += f"### VEC de VOTOS TOTAL dado ELECTORES > 1000\n"
 resultados += (
-    f"El **Valor Esperado Condicional** (VEC) de **VOTOS TOTAL** dado que el número de **ELECTORES** es mayor a 1000 "
-    f"es de {valor_esperado_condicional_votos_total:.2f}. Este valor representa la expectativa del número de votos "
-    f"totales en aquellas localidades donde el número de electores supera los 1000. En otras palabras, nos indica "
-    f"el promedio de votos totales en los lugares con más de 1000 electores.\n"
-    f"Este resultado puede ser útil para entender cómo se comportan los votos en lugares con mayor densidad electoral, "
-    f"y puede sugerir tendencias o comportamientos particulares en esos contextos.\n\n"
+    f"- **Descripción del cálculo**: Este cálculo muestra el **Valor Esperado Condicional** de los **VOTOS TOTAL** en "
+    f"las localidades donde el número de **ELECTORES** supera los 1000. Es decir, estamos analizando el comportamiento de "
+    f"los votos totales en aquellas áreas con una mayor población electoral.\n\n"
+    f"- **Resultado**: El VEC es de {valor_esperado_condicional_votos_total:.2f}. Esto significa que, en promedio, en "
+    f"las localidades con más de 1000 electores, el número total de votos es de aproximadamente {valor_esperado_condicional_votos_total:.2f}.\n\n"
+    f"- **Interpretación**: Este valor puede ser útil para entender las dinámicas de votación en áreas con mayor densidad electoral. "
+    f"Un número mayor de electores podría reflejar un mayor interés o una mayor representación política, lo que se puede traducir "
+    f"en un aumento de la participación electoral y en el número de votos emitidos.\n\n"
 )
 
 # --------------------------------------------------------------------------------
@@ -32,13 +46,13 @@ valor_esperado_condicional_votos_nulos = condicion_votos_nulos.mean()
 # Guardamos el resultado con explicación detallada
 resultados += f"### VEC de VOTOS NULOS dado VOTOS TOTAL > 500\n"
 resultados += (
-    f"El **Valor Esperado Condicional** (VEC) de **VOTOS NULOS** dado que el número de **VOTOS TOTAL** es mayor a 500 "
-    f"es de {valor_esperado_condicional_votos_nulos:.2f}. Este cálculo nos da el promedio de votos nulos en aquellas "
-    f"localidades donde el total de votos supera los 500. El VEC es una herramienta que permite ver cómo varía el número "
-    f"de votos nulos en función de los votos totales registrados.\n"
-    f"Este resultado puede reflejar situaciones en las cuales un mayor número de votos totales se asocia a un aumento o "
-    f"disminución en los votos nulos, y puede ser útil para identificar patrones de desinformación o rechazo hacia los "
-    f"candidatos.\n\n"
+    f"- **Descripción del cálculo**: Este cálculo nos muestra el **Valor Esperado Condicional** de los **VOTOS NULOS**, dado que "
+    f"el total de **VOTOS TOTAL** supera los 500. Este análisis ayuda a entender cómo la cantidad de votos nulos varía en relación "
+    f"a un número elevado de votos emitidos.\n\n"
+    f"- **Resultado**: El VEC es de {valor_esperado_condicional_votos_nulos:.2f}. Esto indica que, en promedio, en las localidades "
+    f"donde los votos totales superan los 500, el número de votos nulos es de aproximadamente {valor_esperado_condicional_votos_nulos:.2f}.\n\n"
+    f"- **Interpretación**: Este valor es importante para entender los patrones de rechazo hacia los candidatos o la falta de confianza en "
+    f"el proceso electoral. Un mayor número de votos nulos podría reflejar desinformación, frustración o desinterés hacia el sistema electoral.\n\n"
 )
 
 # --------------------------------------------------------------------------------
@@ -55,13 +69,14 @@ valor_esperado_mayor_1000 = condicion_mayor_1000.mean()
 # Guardamos el resultado con explicación detallada
 resultados += f"### VEC de VOTOS BLANCOS dado rangos de ELECTORES\n"
 resultados += (
-    f"El **Valor Esperado Condicional** (VEC) de **VOTOS BLANCOS** se analiza en dos grupos según el número de "
-    f"electores. En localidades con **ELECTORES <= 1000**, el VEC de votos blancos es de {valor_esperado_menor_1000:.2f}, "
-    f"mientras que en localidades con **ELECTORES > 1000**, el VEC es de {valor_esperado_mayor_1000:.2f}.\n"
-    f"Esto nos muestra cómo cambia la proporción de votos blancos dependiendo del tamaño del electorado. Un número mayor de "
-    f"electores podría indicar una mayor diversidad de opiniones, lo que puede traducirse en una mayor cantidad de votos "
-    f"blancos. Este análisis es importante para entender los patrones de rechazo de candidatos o de desinterés en el proceso "
-    f"electoral en función del tamaño de la población electoral.\n\n"
+    f"- **Descripción del cálculo**: Este análisis compara el **Valor Esperado Condicional** de los **VOTOS BLANCOS** en dos grupos: "
+    f"las localidades con **ELECTORES <= 1000** y las que tienen **ELECTORES > 1000**. De esta forma, podemos observar cómo varía la "
+    f"proporción de votos blancos según el tamaño del electorado.\n\n"
+    f"- **Resultado**: El VEC para **ELECTORES <= 1000** es de {valor_esperado_menor_1000:.2f}, mientras que el VEC para **ELECTORES > 1000** es de {valor_esperado_mayor_1000:.2f}.\n\n"
+    f"- **Interpretación**: Estos valores muestran que, en promedio, las localidades con menos de 1000 electores tienen un número distinto "
+    f"de votos blancos comparado con aquellas que tienen más de 1000 electores. Esto puede ser indicativo de patrones de desinterés, "
+    f"desconfianza en los candidatos o falta de información en diferentes contextos electorales. El cambio en el número de votos blancos "
+    f"según el tamaño del electorado puede revelar distintas actitudes políticas o comportamientos en las urnas.\n\n"
 )
 
 # --------------------------------------------------------------------------------
