@@ -17,6 +17,16 @@ resultados += f"### VEC de VOTOS TOTAL dado ELECTORES > 1000\n"
 resultados += f"Valor esperado condicional de VOTOS TOTAL dado ELECTORES > 1000: {valor_esperado_condicional_votos_total:.2f}\n\n"
 
 # --------------------------------------------------------------------------------
+# Cálculo 1: VEC de VOTOS TOTAL dado ELECTORES < 1000
+# --------------------------------------------------------------------------------
+condicion_votos_total = df[df['ELECTORES'] < 1000]['VOTOS TOTAL']
+valor_esperado_condicional_votos_total = condicion_votos_total.mean()
+
+# Guardamos el resultado
+resultados += f"### VEC de VOTOS TOTAL dado ELECTORES < 1000\n"
+resultados += f"Valor esperado condicional de VOTOS TOTAL dado ELECTORES < 1000: {valor_esperado_condicional_votos_total:.2f}\n\n"
+
+# --------------------------------------------------------------------------------
 # Cálculo 2: VEC de VOTOS NULOS dado VOTOS TOTAL > 500
 # --------------------------------------------------------------------------------
 condicion_votos_nulos = df[df['VOTOS TOTAL'] > 500]['VOTOS NULOS']
