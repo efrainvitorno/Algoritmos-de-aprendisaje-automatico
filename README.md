@@ -820,3 +820,51 @@
 weighted avg       0.20      0.26      0.21       187
 
 Exactitud del modelo con kernel 'rbf': 0.2620320855614973
+
+## Valor Esperado Condicional (VEC)
+
+En este proyecto se realizan cálculos del **Valor Esperado Condicional (VEC)** utilizando datos de votación. El VEC es una medida que nos da el valor promedio de una variable (por ejemplo, el total de votos, los votos nulos o los votos blancos) bajo una condición específica. 
+
+A continuación se presentan los cálculos realizados en el código:
+
+### Cálculo 1: VEC de VOTOS TOTAL dado ELECTORES > 1000
+
+El **Valor Esperado Condicional de VOTOS TOTAL dado ELECTORES > 1000** es el promedio de los votos totales cuando el número de electores supera los 1000.
+
+#### Resultados:
+- **Valor esperado condicional de VOTOS TOTAL dado ELECTORES > 1000**: 1837.64
+
+**Explicación**:  
+Este cálculo nos proporciona el valor promedio de los votos totales cuando sabemos que el número de electores en la región es mayor a 1000. Este tipo de cálculo es útil cuando se desea entender cómo el número de electores influye en el total de votos, pero solo para los casos en que los electores superan cierto umbral.
+
+---
+
+### Cálculo 2: VEC de VOTOS NULOS dado VOTOS TOTAL > 500
+
+El **Valor Esperado Condicional de VOTOS NULOS dado VOTOS TOTAL > 500** es el promedio de los votos nulos bajo la condición de que los votos totales superen los 500.
+
+#### Resultados:
+- **Valor esperado condicional de VOTOS NULOS dado VOTOS TOTAL > 500**: 71.23
+
+**Explicación**:  
+Este cálculo nos indica el valor promedio de los votos nulos cuando el número total de votos en una región es mayor a 500. Esta información es importante para comprender cómo las elecciones pueden estar influenciadas por el desinterés o el rechazo hacia las opciones propuestas. Un VEC alto en votos nulos podría indicar que los votantes prefieren no votar o no están conformes con las opciones disponibles.
+
+---
+
+### Cálculo 3: Comparación de VEC de VOTOS BLANCOS para diferentes rangos de ELECTORES
+
+En este cálculo, se comparan los valores esperados condicionales de los votos blancos en dos grupos de electores: aquellos con menos de o igual a 1000 electores, y aquellos con más de 1000 electores.
+
+#### Resultados:
+- **VEC de VOTOS BLANCOS dado ELECTORES <= 1000**: 33.63
+- **VEC de VOTOS BLANCOS dado ELECTORES > 1000**: 194.31
+
+**Explicación**:  
+El VEC de votos blancos nos da una idea del porcentaje de votos que no favorecen a ninguna opción en particular. En este caso, se calcula para dos grupos diferentes de electores: aquellos con 1000 o menos electores, y aquellos con más de 1000. Comparar estos dos valores puede revelar si los votantes en áreas más grandes tienden a votar en blanco con mayor frecuencia, lo cual podría estar relacionado con factores como el nivel de desconfianza en los partidos políticos o la calidad de las opciones disponibles.
+
+---
+
+### Conclusión
+
+Los cálculos realizados nos ofrecen una visión más clara de cómo las condiciones (como el número de electores o el total de votos) afectan ciertos resultados de las elecciones. Estas métricas son útiles para entender patrones de comportamiento electoral y ayudar a los analistas a identificar posibles áreas de intervención o mejora en los procesos electorales.
+
