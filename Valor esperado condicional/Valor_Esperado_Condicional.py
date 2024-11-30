@@ -30,7 +30,7 @@ resultados += (
     f"- **Descripción del cálculo**: Este cálculo muestra el **Valor Esperado Condicional** de los **VOTOS TOTAL** en "
     f"las localidades donde el número de **ELECTORES** supera los 1000. Es decir, estamos analizando el comportamiento de "
     f"los votos totales en aquellas áreas con una mayor población electoral.\n\n"
-    f"- **Resultado**: El VEC de VOTTOS TOTALES es de {valor_esperado_condicional_votos_total:.2f}. Esto significa que, en promedio, en "
+    f"- **Resultado**: El VEC de VOTOS TOTALES es de {valor_esperado_condicional_votos_total:.2f}. Esto significa que, en promedio, en "
     f"las localidades con más de 1000 electores, el número total de votos es de aproximadamente {valor_esperado_condicional_votos_total:.2f}.\n\n"
     f"- **Interpretación**: Este valor puede ser útil para entender las dinámicas de votación en áreas con mayor densidad electoral. "
     f"Un número mayor de electores podría reflejar un mayor interés o una mayor representación política, lo que se puede traducir "
