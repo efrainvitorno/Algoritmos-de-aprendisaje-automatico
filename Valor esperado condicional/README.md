@@ -5,7 +5,7 @@ El **Valor Esperado Condicional** (VEC) es una medida estadística que describe l
 ### VEC de VOTOS TOTAL dado ELECTORES > 1000
 - **Descripción del cálculo**: Este cálculo muestra el **Valor Esperado Condicional** de los **VOTOS TOTAL** en las localidades donde el número de **ELECTORES** supera los 1000. Es decir, estamos analizando el comportamiento de los votos totales en aquellas áreas con una mayor población electoral.
 
-- **Resultado**: El VEC de VOTTOS TOTALES es de 1837.64. Esto significa que, en promedio, en las localidades con más de 1000 electores, el número total de votos es de aproximadamente 1837.64.
+- **Resultado**: El VEC de VOTOS TOTALES es de 1837.64. Esto significa que, en promedio, en las localidades con más de 1000 electores, el número total de votos es de aproximadamente 1837.64.
 
 - **Interpretación**: Este valor puede ser útil para entender las dinámicas de votación en áreas con mayor densidad electoral. Un número mayor de electores podría reflejar un mayor interés o una mayor representación política, lo que se puede traducir en un aumento de la participación electoral y en el número de votos emitidos.
 
