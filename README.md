@@ -1,52 +1,3 @@
-# TÃ­tulo del Proyecto
-# "AnÃ¡lisis de Resultados de la Consulta Popular de Revocatoria del Mandato de Autoridades Municipales Distritales (2001)
-# integrates
-
-
-| Codigo        | Nombres | ----------- |
-| --------------| ------- | ----------- |
-| 160337        | Efrain Vitorino Marin |
-| 215948        | Jose Francisco Quentasi Juachin |
-| 210940        | Jhon Esau Pumachoque Choquenaira |
-| 225426       | Richard Rodriguez Huaylla |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Contenido del archivo CSV
 
@@ -57,13 +8,13 @@
 |    10103 | AMAZONAS       | CHACHAPOYAS             | BALSAS                    | JULIO CESAR BURGA SANCHEZ                      |         495 |        129 |        194 |              15 |             3 |                  0 |           341 |
 |    10103 | AMAZONAS       | CHACHAPOYAS             | BALSAS                    | LUIS ALBERTO ZUMAETA ESCOBEDO                  |         495 |        136 |        185 |              17 |             3 |                  0 |           341 |
 |    10103 | AMAZONAS       | CHACHAPOYAS             | BALSAS                    | SANTOS TEODORO GARAY ARAUJO                    |         495 |        128 |        203 |               5 |             5 |                  0 |           341 |
-|    10103 | AMAZONAS       | CHACHAPOYAS             | BALSAS                    | SILVIA MARLENI CASTAÃ‘EDA TORREJON              |         495 |         96 |        190 |              49 |             6 |                  0 |           341 |
+|    10103 | AMAZONAS       | CHACHAPOYAS             | BALSAS                    | SILVIA MARLENI CASTAÑEDA TORREJON              |         495 |         96 |        190 |              49 |             6 |                  0 |           341 |
 |    10111 | AMAZONAS       | CHACHAPOYAS             | LEVANTO                   | ABELINA LOPEZ ANGULO                           |         629 |        291 |        107 |              48 |            11 |                  0 |           457 |
 |    10111 | AMAZONAS       | CHACHAPOYAS             | LEVANTO                   | FLORARDO ALVARADO TRIGOSO                      |         629 |        288 |        105 |              54 |            10 |                  0 |           457 |
 |    10111 | AMAZONAS       | CHACHAPOYAS             | LEVANTO                   | GREGORIO YOPLAC ZUTA                           |         629 |        286 |        117 |              45 |             9 |                  0 |           457 |
 |    10111 | AMAZONAS       | CHACHAPOYAS             | LEVANTO                   | JAIME VILCARROMERO ZUTA                        |         629 |        278 |        108 |              58 |            13 |                  0 |           457 |
 |    10111 | AMAZONAS       | CHACHAPOYAS             | LEVANTO                   | LEONCIO GUMERCINDO HERRERA TUESTA              |         629 |        288 |        144 |              17 |             8 |                  0 |           457 |
-|    10111 | AMAZONAS       | CHACHAPOYAS             | LEVANTO                   | TEODOCIO VALDIVIA ORDOÃ‘EZ                      |         629 |        286 |        105 |              57 |             9 |                  0 |           457 |
+|    10111 | AMAZONAS       | CHACHAPOYAS             | LEVANTO                   | TEODOCIO VALDIVIA ORDOÑEZ                      |         629 |        286 |        105 |              57 |             9 |                  0 |           457 |
 |    10305 | AMAZONAS       | BONGARA                 | CHURUJA                   | JAIME VARGAS HIDALGO                           |         315 |        120 |         39 |              53 |            11 |                  0 |           223 |
 |    10305 | AMAZONAS       | BONGARA                 | CHURUJA                   | LUIS ANGELES ZUTA                              |         315 |         94 |         75 |              41 |            13 |                  0 |           223 |
 |    10305 | AMAZONAS       | BONGARA                 | CHURUJA                   | MARIA JESUS URQUIA DE VELEZ                    |         315 |        100 |        100 |              13 |            10 |                  0 |           223 |
@@ -73,14 +24,14 @@
 |    10402 | AMAZONAS       | LUYA                    | CAMPORREDONDO             | SEGUNDO ASCENCIO HEREDIA MEDINA                |        2544 |       1396 |        151 |             104 |            69 |                  0 |          1720 |
 |    10402 | AMAZONAS       | LUYA                    | CAMPORREDONDO             | SILVIA MARLIT VERA DIAZ                        |        2544 |       1215 |        312 |             125 |            67 |                  0 |          1719 |
 |    10409 | AMAZONAS       | LUYA                    | LUYA                      | EDGAR ZUMAETA REATEGUI                         |        1978 |        519 |        541 |             187 |            46 |                  0 |          1293 |
-|    10409 | AMAZONAS       | LUYA                    | LUYA                      | ELISA PIZARRO CASTAÃ‘EDA                        |        1978 |        524 |        528 |             203 |            38 |                  0 |          1293 |
+|    10409 | AMAZONAS       | LUYA                    | LUYA                      | ELISA PIZARRO CASTAÑEDA                        |        1978 |        524 |        528 |             203 |            38 |                  0 |          1293 |
 |    10409 | AMAZONAS       | LUYA                    | LUYA                      | FEDERICO LLANOS ANGELES                        |        1978 |        568 |        619 |              53 |            53 |                  0 |          1293 |
 |    10409 | AMAZONAS       | LUYA                    | LUYA                      | JOSE MERCEDES VALERIN MENDOZA                  |        1978 |        552 |        529 |             173 |            39 |                  0 |          1293 |
 |    10409 | AMAZONAS       | LUYA                    | LUYA                      | JOSE VICTOR VILLAR HERNANDEZ                   |        1978 |        548 |        549 |             134 |            52 |                  0 |          1283 |
 |    10417 | AMAZONAS       | LUYA                    | SAN JERONIMO              | ALFONSO CHUQUIPUL FLORES                       |         515 |        155 |        106 |              43 |            12 |                  0 |           316 |
-|    10417 | AMAZONAS       | LUYA                    | SAN JERONIMO              | CASIMIRO REAP CASTAÃ‘EDA                        |         515 |        170 |        100 |              31 |            15 |                  0 |           316 |
+|    10417 | AMAZONAS       | LUYA                    | SAN JERONIMO              | CASIMIRO REAP CASTAÑEDA                        |         515 |        170 |        100 |              31 |            15 |                  0 |           316 |
 |    10417 | AMAZONAS       | LUYA                    | SAN JERONIMO              | CESAR VALLEJOS LOPEZ                           |         515 |        168 |        122 |              14 |            12 |                  0 |           316 |
-|    10417 | AMAZONAS       | LUYA                    | SAN JERONIMO              | MANUELA GALLAC CASTAÃ‘EDA                       |         515 |        158 |        118 |              28 |            12 |                  0 |           316 |
+|    10417 | AMAZONAS       | LUYA                    | SAN JERONIMO              | MANUELA GALLAC CASTAÑEDA                       |         515 |        158 |        118 |              28 |            12 |                  0 |           316 |
 |    10420 | AMAZONAS       | LUYA                    | SANTO TOMAS               | JORGE YOPLAC CHAUCA                            |        1922 |        798 |        374 |             127 |            45 |                  0 |          1344 |
 |    10420 | AMAZONAS       | LUYA                    | SANTO TOMAS               | JOSE HILARIO LA TORRE VALQUI                   |        1922 |        773 |        371 |             162 |            38 |                  0 |          1344 |
 |    10420 | AMAZONAS       | LUYA                    | SANTO TOMAS               | OSCAR PORTOCARRERO BAZAN                       |        1922 |        791 |        401 |             103 |            49 |                  0 |          1344 |
@@ -120,11 +71,11 @@
 |    20410 | ANCASH         | CARHUAZ                 | TINCO                     | TITO MENDOZA TAMARA                            |        1013 |        435 |        152 |              92 |            24 |                  0 |           703 |
 |    20411 | ANCASH         | CARHUAZ                 | YUNGAR                    | ANTONIO EDINSON RIOS ALFARO                    |        1645 |        699 |        354 |              74 |            56 |                  0 |          1183 |
 |    20411 | ANCASH         | CARHUAZ                 | YUNGAR                    | MARINO ROSALES AMBROSIO                        |        1645 |        695 |        347 |              89 |            52 |                  0 |          1183 |
-|    20411 | ANCASH         | CARHUAZ                 | YUNGAR                    | PEDRO PABLO AQUIÃ‘O GIRALDO                     |        1645 |        694 |        340 |              93 |            56 |                  0 |          1183 |
+|    20411 | ANCASH         | CARHUAZ                 | YUNGAR                    | PEDRO PABLO AQUIÑO GIRALDO                     |        1645 |        694 |        340 |              93 |            56 |                  0 |          1183 |
 |    20411 | ANCASH         | CARHUAZ                 | YUNGAR                    | PRIMITIVO BARRETO ROSALES                      |        1645 |        694 |        340 |             107 |            42 |                  0 |          1183 |
 |    20503 | ANCASH         | CASMA                   | COMANDANTE NOEL           | SAMUEL DANIEL LEON CHAVEZ                      |        1169 |        326 |        436 |              40 |            35 |                  0 |           837 |
 |    20706 | ANCASH         | HUAYLAS                 | PAMPAROMAS                | VICTORIANO NICANOR RIVERA PACHECO              |        2792 |        764 |        637 |              44 |           111 |                  0 |          1556 |
-|    20708 | ANCASH         | HUAYLAS                 | SANTA CRUZ                | MANZUETO EMILIO MONTAÃ‘EZ MORALES               |        2204 |        722 |        614 |              48 |           183 |                  0 |          1567 |
+|    20708 | ANCASH         | HUAYLAS                 | SANTA CRUZ                | MANZUETO EMILIO MONTAÑEZ MORALES               |        2204 |        722 |        614 |              48 |           183 |                  0 |          1567 |
 |    20813 | ANCASH         | HUARI                   | SAN MARCOS                | EMERSON MELCIADES MARCOS RAMIREZ               |        6518 |       2101 |       1110 |             488 |           189 |                  0 |          3888 |
 |    20813 | ANCASH         | HUARI                   | SAN MARCOS                | FRANCISCO GREGORIO VARGAS DIAZ                 |        6518 |       2153 |       1228 |             296 |           213 |                  0 |          3890 |
 |    20813 | ANCASH         | HUARI                   | SAN MARCOS                | NAZARIO VICTOR MEJIA RIVERA                    |        6518 |       2110 |       1149 |             398 |           234 |                  0 |          3891 |
@@ -156,7 +107,7 @@
 |    21604 | ANCASH         | ANTONIO RAIMONDI        | CHINGAS                   | VICTOR JIMENEZ CHAVEZ                          |        1341 |        212 |        359 |             134 |            38 |                  0 |           743 |
 |    21604 | ANCASH         | ANTONIO RAIMONDI        | CHINGAS                   | YOVETO FERNANDEZ BENITES                       |        1341 |        167 |        385 |             167 |            24 |                  0 |           743 |
 |    21904 | ANCASH         | HUARMEY                 | MALVAS                    | BENIGNO JULIAN ROSALES PANDO                   |         484 |        132 |        137 |              26 |             3 |                  0 |           298 |
-|    21904 | ANCASH         | HUARMEY                 | MALVAS                    | ELEODORO ULDERICO NUÃ‘EZ PAPA                   |         484 |        144 |        134 |              13 |             7 |                  0 |           298 |
+|    21904 | ANCASH         | HUARMEY                 | MALVAS                    | ELEODORO ULDERICO NUÑEZ PAPA                   |         484 |        144 |        134 |              13 |             7 |                  0 |           298 |
 |    21904 | ANCASH         | HUARMEY                 | MALVAS                    | MAXIMA EMPERATRIZ ROSALES CUEVA                |         484 |        129 |        144 |              21 |             4 |                  0 |           298 |
 |    21904 | ANCASH         | HUARMEY                 | MALVAS                    | VICTOR BENJAMIN ANTUNEZ ROSALES                |         484 |        141 |        130 |              21 |             6 |                  0 |           298 |
 |    22001 | ANCASH         | OCROS                   | ACAS                      | DOMINGO SOBERANIS CRUZ                         |         170 |         89 |         48 |               1 |             2 |                  0 |           140 |
@@ -186,7 +137,7 @@
 |    30708 | APURIMAC       | CHINCHEROS              | RANRACANCHA               | CARMEN ROSA ROMERO VILLANO                     |        1732 |        769 |        339 |             281 |            53 |                  0 |          1442 |
 |    30708 | APURIMAC       | CHINCHEROS              | RANRACANCHA               | FELIPE NAVARRO SERNA                           |        1732 |        785 |        333 |             259 |            65 |                  0 |          1442 |
 |    30708 | APURIMAC       | CHINCHEROS              | RANRACANCHA               | FELIX NAVARRO PASCUAL                          |        1732 |        781 |        372 |             226 |            63 |                  0 |          1442 |
-|    30708 | APURIMAC       | CHINCHEROS              | RANRACANCHA               | JUAN CASTAÃ‘EDA VILCHEZ                         |        1732 |        776 |        422 |             172 |            72 |                  0 |          1442 |
+|    30708 | APURIMAC       | CHINCHEROS              | RANRACANCHA               | JUAN CASTAÑEDA VILCHEZ                         |        1732 |        776 |        422 |             172 |            72 |                  0 |          1442 |
 |    30708 | APURIMAC       | CHINCHEROS              | RANRACANCHA               | TEOFILO NAVARRO VEGA                           |        1732 |        788 |        350 |             246 |            58 |                  0 |          1442 |
 |    30708 | APURIMAC       | CHINCHEROS              | RANRACANCHA               | TEOFILO QUISPE CCASANI                         |        1732 |        636 |        351 |             244 |           211 |                  0 |          1442 |
 |    40105 | AREQUIPA       | AREQUIPA                | CHIGUATA                  | JOSE CARLOS SALAZAR MARQUINA                   |        1723 |        959 |        273 |              20 |            73 |                  0 |          1325 |
@@ -204,7 +155,7 @@
 |    40403 | AREQUIPA       | CARAVELI                | ATICO                     | PASCUALA ALFARO DE VELARDE                     |        1824 |        595 |        640 |             146 |            26 |                  0 |          1407 |
 |    40403 | AREQUIPA       | CARAVELI                | ATICO                     | VICTOR ARTURO GONZALES CANDIA                  |        1824 |        634 |        603 |             141 |            29 |                  0 |          1407 |
 |    40406 | AREQUIPA       | CARAVELI                | CAHUACHO                  | SEGUNDO GUSTAVO AGUAYO ARIAS                   |         542 |        134 |        200 |               2 |             7 |                  0 |           343 |
-|    40411 | AREQUIPA       | CARAVELI                | LOMAS                     | JORGE AGUSTIN NIÃ‘O ANICAMA                     |         438 |        163 |        142 |               2 |             3 |                  0 |           310 |
+|    40411 | AREQUIPA       | CARAVELI                | LOMAS                     | JORGE AGUSTIN NIÑO ANICAMA                     |         438 |        163 |        142 |               2 |             3 |                  0 |           310 |
 |    40411 | AREQUIPA       | CARAVELI                | LOMAS                     | RAFAEL CELSO LEVANO PEBES                      |         438 |        171 |        114 |              23 |             2 |                  0 |           310 |
 |    40503 | AREQUIPA       | CASTILLA                | AYO                       | ANDRES BEGAZO MEJIA                            |         188 |         95 |         26 |               3 |             1 |                  0 |           125 |
 |    40503 | AREQUIPA       | CASTILLA                | AYO                       | ANTONIA SUSANA LOPEZ DE HUAYNA                 |         188 |         96 |         26 |               2 |             1 |                  0 |           125 |
@@ -218,7 +169,7 @@
 |    40802 | AREQUIPA       | LA UNION                | ALCA                      | REYNA ISABEL TITO HUAMANI                      |        1181 |        424 |        177 |             119 |            60 |                  0 |           780 |
 |    50102 | AYACUCHO       | HUAMANGA                | ACOS VINCHOS              | JAVIER GARCIA BARRIENTOS                       |        2015 |        579 |        544 |             231 |            67 |                  0 |          1421 |
 |    50102 | AYACUCHO       | HUAMANGA                | ACOS VINCHOS              | VALERIO MELGAR FLORES                          |        2015 |        592 |        576 |             185 |            68 |                  0 |          1421 |
-|    50102 | AYACUCHO       | HUAMANGA                | ACOS VINCHOS              | VICTOR CASTRO CHUÃ‘OCCA                         |        2015 |        584 |        614 |             150 |            72 |                  0 |          1420 |
+|    50102 | AYACUCHO       | HUAMANGA                | ACOS VINCHOS              | VICTOR CASTRO CHUÑOCCA                         |        2015 |        584 |        614 |             150 |            72 |                  0 |          1420 |
 |    50104 | AYACUCHO       | HUAMANGA                | CHIARA                    | JULIO ESTANISLAO AYALA BAUTISTA                |        1035 |        427 |        348 |              25 |            65 |                  0 |           865 |
 |    50106 | AYACUCHO       | HUAMANGA                | SAN JOSE DE TICLLAS       | ADRIANA ROJAS LLACTAHUAMAN                     |         603 |        255 |         74 |              56 |            14 |                  0 |           399 |
 |    50106 | AYACUCHO       | HUAMANGA                | SAN JOSE DE TICLLAS       | BARTOLOME YUPANQUI SANTIAGO                    |         603 |        262 |         79 |              39 |            19 |                  0 |           399 |
@@ -236,7 +187,7 @@
 |    50904 | AYACUCHO       | VILCAS HUAMAN           | CARHUANCA                 | JULIA TEOBALDA CHAVEZ OCHOA DE SERNA           |        1405 |        330 |         63 |              48 |            44 |                  0 |           485 |
 |    50905 | AYACUCHO       | VILCAS HUAMAN           | CONCEPCION                | ALEJANDRO ZEA RONDINEL                         |        1114 |        379 |        130 |               7 |            44 |                  0 |           560 |
 |    51005 | AYACUCHO       | PAUCAR DEL SARA SARA    | MARCABAMBA                | OSWALDO FLORES CANALES                         |         359 |        140 |         59 |               6 |            15 |                  0 |           220 |
-|    51010 | AYACUCHO       | PAUCAR DEL SARA SARA    | SARA SARA                 | DANIEL HUAMAN CASTAÃ‘EDA                        |         298 |        131 |         99 |               4 |             5 |                  0 |           239 |
+|    51010 | AYACUCHO       | PAUCAR DEL SARA SARA    | SARA SARA                 | DANIEL HUAMAN CASTAÑEDA                        |         298 |        131 |         99 |               4 |             5 |                  0 |           239 |
 |    60203 | CAJAMARCA      | CAJABAMBA               | CONDEBAMBA                | ANGELA NASARIA LEDESMA TORRES                  |        3879 |        664 |       1394 |             186 |           166 |                  0 |          2410 |
 |    60203 | CAJAMARCA      | CAJABAMBA               | CONDEBAMBA                | CARLOS ALBERTO URBINA BURGOS                   |        3879 |        664 |       1462 |             116 |           159 |                  0 |          2401 |
 |    60203 | CAJAMARCA      | CAJABAMBA               | CONDEBAMBA                | DOMINGO HILARIO CARDENAS                       |        3879 |        657 |       1387 |             214 |           152 |                  0 |          2410 |
@@ -279,13 +230,13 @@
 |    60803 | CAJAMARCA      | JAEN                    | COLASAY                   | LUCIANO TAPIA CASTILLO                         |        4055 |       1045 |       1364 |              34 |           119 |                  0 |          2562 |
 |    60807 | CAJAMARCA      | JAEN                    | SALLIQUE                  | EUFRANIO AREVALO RODRIGUEZ                     |        2315 |        885 |        484 |             143 |            67 |                  0 |          1579 |
 |    60807 | CAJAMARCA      | JAEN                    | SALLIQUE                  | EXEQUIEL GARCIA CARRASCO                       |        2315 |        914 |        460 |             140 |            65 |                  0 |          1579 |
-|    60807 | CAJAMARCA      | JAEN                    | SALLIQUE                  | HERNANDO PONGO PEÃ‘A                            |        2315 |        906 |        462 |             149 |            61 |                  0 |          1578 |
+|    60807 | CAJAMARCA      | JAEN                    | SALLIQUE                  | HERNANDO PONGO PEÑA                            |        2315 |        906 |        462 |             149 |            61 |                  0 |          1578 |
 |    60807 | CAJAMARCA      | JAEN                    | SALLIQUE                  | NORA JULCA FLORES                              |        2315 |        921 |        439 |             163 |            56 |                  0 |          1579 |
 |    60807 | CAJAMARCA      | JAEN                    | SALLIQUE                  | SANTIAGO CUEVA YAJAHUANCA                      |        2315 |        932 |        478 |             102 |            67 |                  0 |          1579 |
 |    60908 | CAJAMARCA      | SANTA CRUZ              | UTICYACU                  | DAVID JESUS DIAZ DIAZ                          |        1000 |        218 |        479 |              30 |            21 |                  0 |           748 |
 |    60908 | CAJAMARCA      | SANTA CRUZ              | UTICYACU                  | GUILLERMO MERA FLORES                          |        1000 |        227 |        483 |              16 |            22 |                  0 |           748 |
 |    61003 | CAJAMARCA      | SAN MIGUEL              | LA FLORIDA                | EDDIE VISLAO SILVA                             |        3130 |        588 |       1097 |             222 |            72 |                  0 |          1979 |
-|    61003 | CAJAMARCA      | SAN MIGUEL              | LA FLORIDA                | LINO REAÃ‘O MENDOZA                             |        3130 |        584 |       1122 |             199 |            74 |                  0 |          1979 |
+|    61003 | CAJAMARCA      | SAN MIGUEL              | LA FLORIDA                | LINO REAÑO MENDOZA                             |        3130 |        584 |       1122 |             199 |            74 |                  0 |          1979 |
 |    61003 | CAJAMARCA      | SAN MIGUEL              | LA FLORIDA                | MARINA TORRES SALAZAR                          |        3130 |        576 |       1009 |             241 |           153 |                  0 |          1979 |
 |    61003 | CAJAMARCA      | SAN MIGUEL              | LA FLORIDA                | PACO CHUQUILIN HUERTAS                         |        3130 |        618 |       1175 |              93 |            93 |                  0 |          1979 |
 |    61007 | CAJAMARCA      | SAN MIGUEL              | SAN GREGORIO              | VICTOR ELEAZAR VALDERRAMA HUATAY               |        1176 |        308 |        442 |              20 |            21 |                  0 |           791 |
@@ -303,7 +254,7 @@
 |    61304 | CAJAMARCA      | SAN PABLO               | TUMBADEN                  | MIGUEL ANGEL CHAVARRI HERRERA                  |        1179 |        603 |        164 |             160 |            25 |                  0 |           952 |
 |    61304 | CAJAMARCA      | SAN PABLO               | TUMBADEN                  | TELMO JUVENAL GAMARRA CABANILLAS               |        1179 |        557 |        289 |              63 |            43 |                  0 |           952 |
 |    70908 | CUSCO          | LA CONVENCION           | QUELLOUNO                 | EVANGELINA TOCRE CCANTO                        |        3608 |       1439 |        492 |             222 |            74 |                  0 |          2227 |
-|    70908 | CUSCO          | LA CONVENCION           | QUELLOUNO                 | GRIMALDO PALOMINO ZUÃ‘IGA                       |        3608 |       1441 |        509 |             215 |            62 |                  0 |          2227 |
+|    70908 | CUSCO          | LA CONVENCION           | QUELLOUNO                 | GRIMALDO PALOMINO ZUÑIGA                       |        3608 |       1441 |        509 |             215 |            62 |                  0 |          2227 |
 |    70908 | CUSCO          | LA CONVENCION           | QUELLOUNO                 | LUIS ENRIQUE VALER CASAS                       |        3608 |       1378 |        552 |             235 |            62 |                  0 |          2227 |
 |    70908 | CUSCO          | LA CONVENCION           | QUELLOUNO                 | MARIO VARGAS JIMENEZ                           |        3608 |       1415 |        553 |             200 |            59 |                  0 |          2227 |
 |    70908 | CUSCO          | LA CONVENCION           | QUELLOUNO                 | PABLO OLIVERA VILA                             |        3608 |       1484 |        574 |             101 |            68 |                  0 |          2227 |
@@ -311,7 +262,7 @@
 |    71208 | CUSCO          | QUISPICANCHIS           | LUCRE                     | AURELIO CONDORI SULLCA                         |        1838 |        948 |        213 |             150 |            25 |                  0 |          1336 |
 |    71208 | CUSCO          | QUISPICANCHIS           | LUCRE                     | CESAR PEREZ CONDORI                            |        1838 |        927 |        247 |             139 |            23 |                  0 |          1336 |
 |    71208 | CUSCO          | QUISPICANCHIS           | LUCRE                     | CRISTINA AYACHO LOAYZA                         |        1838 |        930 |        234 |             146 |            26 |                  0 |          1336 |
-|    71208 | CUSCO          | QUISPICANCHIS           | LUCRE                     | ERASMO MUÃ‘OZ GARCIA                            |        1838 |        916 |        246 |             149 |            24 |                  0 |          1335 |
+|    71208 | CUSCO          | QUISPICANCHIS           | LUCRE                     | ERASMO MUÑOZ GARCIA                            |        1838 |        916 |        246 |             149 |            24 |                  0 |          1335 |
 |    71208 | CUSCO          | QUISPICANCHIS           | LUCRE                     | LAZARO ORTEGA LOAIZA                           |        1838 |        997 |        247 |              53 |            39 |                  0 |          1336 |
 |    71208 | CUSCO          | QUISPICANCHIS           | LUCRE                     | PASCUAL TISOC QUISPE                           |        1838 |        874 |        298 |             128 |            36 |                  0 |          1336 |
 |    71304 | CUSCO          | URUBAMBA                | MACHUPICCHU               | CESAR GARCIA GUERRERO                          |        1204 |        381 |        375 |             177 |            20 |                  0 |           953 |
@@ -327,7 +278,7 @@
 |    71305 | CUSCO          | URUBAMBA                | MARAS                     | GUIDO CABRERA CRUZ                             |        3461 |        881 |        804 |             346 |            79 |                  0 |          2110 |
 |    71305 | CUSCO          | URUBAMBA                | MARAS                     | LIBORIO SAAVEDRA LUCANA                        |        3461 |       1203 |        390 |             433 |            84 |                  0 |          2110 |
 |    80104 | HUANCAVELICA   | HUANCAVELICA            | CONAYCA                   | AMANDA MEZA DE MARTINEZ                        |         851 |        212 |        133 |             127 |            32 |                  0 |           504 |
-|    80104 | HUANCAVELICA   | HUANCAVELICA            | CONAYCA                   | DEMETRIO VILCAÃ‘AUPA ZUASNABAR                  |         851 |        244 |         90 |             146 |            24 |                  0 |           504 |
+|    80104 | HUANCAVELICA   | HUANCAVELICA            | CONAYCA                   | DEMETRIO VILCAÑAUPA ZUASNABAR                  |         851 |        244 |         90 |             146 |            24 |                  0 |           504 |
 |    80104 | HUANCAVELICA   | HUANCAVELICA            | CONAYCA                   | FRANCISCO CARDENAS CUICAPUZA                   |         851 |        265 |        101 |             100 |            38 |                  0 |           504 |
 |    80104 | HUANCAVELICA   | HUANCAVELICA            | CONAYCA                   | GERARDO LEON RAYMUNDO                          |         851 |        213 |        107 |             154 |            30 |                  0 |           504 |
 |    80104 | HUANCAVELICA   | HUANCAVELICA            | CONAYCA                   | JUVENAL CARDENAS MARTINEZ                      |         851 |        224 |         94 |             160 |            26 |                  0 |           504 |
@@ -379,9 +330,9 @@
 |    90208 | HUANUCO        | AMBO                    | TOMAY-KICHWA              | JUAN JULIO CALERO PACHECO                      |        2233 |        859 |        431 |             122 |            64 |                  0 |          1476 |
 |    90208 | HUANUCO        | AMBO                    | TOMAY-KICHWA              | JULIAN ESCANDON VELASQUEZ                      |        2233 |        863 |        435 |             111 |            67 |                  0 |          1476 |
 |    90208 | HUANUCO        | AMBO                    | TOMAY-KICHWA              | LUIS AUGUSTO FERRER TELLO                      |        2233 |        865 |        473 |              65 |            74 |                  0 |          1477 |
-|    90409 | HUANUCO        | HUAMALIES               | PUÃ‘OS                     | EDILBERTO TOCTO ROJAS                          |        2542 |        707 |        425 |             216 |           102 |                  0 |          1450 |
-|    90409 | HUANUCO        | HUAMALIES               | PUÃ‘OS                     | GONZALO MOGOLLON PABLO                         |        2542 |        721 |        516 |             101 |           112 |                  0 |          1450 |
-|    90502 | HUANUCO        | MARAÃ‘ON                 | CHOLON                    | NESTOR HERRADA VILLANUEVA                      |         887 |        164 |        275 |              13 |            24 |                  0 |           476 |
+|    90409 | HUANUCO        | HUAMALIES               | PUÑOS                     | EDILBERTO TOCTO ROJAS                          |        2542 |        707 |        425 |             216 |           102 |                  0 |          1450 |
+|    90409 | HUANUCO        | HUAMALIES               | PUÑOS                     | GONZALO MOGOLLON PABLO                         |        2542 |        721 |        516 |             101 |           112 |                  0 |          1450 |
+|    90502 | HUANUCO        | MARAÑON                 | CHOLON                    | NESTOR HERRADA VILLANUEVA                      |         887 |        164 |        275 |              13 |            24 |                  0 |           476 |
 |    90801 | HUANUCO        | PUERTO INCA             | HONORIA                   | DIMPNA ESTHER SANCHEZ DE RUIZ                  |        1682 |        450 |        361 |             105 |            18 |                  0 |           934 |
 |    90801 | HUANUCO        | PUERTO INCA             | HONORIA                   | EDGAR RENGIFO SANDOVAL                         |        1682 |        465 |        364 |              86 |            19 |                  0 |           934 |
 |    90801 | HUANUCO        | PUERTO INCA             | HONORIA                   | JOHIDEN DANIEL YUIMACHI CHAVEZ                 |        1682 |        481 |        398 |              35 |            20 |                  0 |           934 |
@@ -399,7 +350,7 @@
 |   110120 | JUNIN          | HUANCAYO                | HUAYUCACHI                | OLIMPIO ROJAS ORELLANA                         |        5207 |       1963 |        765 |             630 |           102 |                  0 |          3460 |
 |   110120 | JUNIN          | HUANCAYO                | HUAYUCACHI                | PELAYO HUGO VASQUEZ BERROCAL                   |        5207 |       2230 |        903 |             207 |           120 |                  0 |          3460 |
 |   110126 | JUNIN          | HUANCAYO                | QUILCAS                   | EMILIANO EUGENIO CONTRERAS PARIONA             |        2444 |        976 |        494 |             233 |           115 |                  0 |          1818 |
-|   110126 | JUNIN          | HUANCAYO                | QUILCAS                   | RODRIGO DANIEL RIVAS Ã‘AUPARI                   |        2444 |       1023 |        582 |             108 |           105 |                  0 |          1818 |
+|   110126 | JUNIN          | HUANCAYO                | QUILCAS                   | RODRIGO DANIEL RIVAS ÑAUPARI                   |        2444 |       1023 |        582 |             108 |           105 |                  0 |          1818 |
 |   110136 | JUNIN          | HUANCAYO                | VIQUES                    | HECTOR CANCHANYA BALBIN                        |        1362 |        258 |        477 |              31 |            37 |                  0 |           803 |
 |   110136 | JUNIN          | HUANCAYO                | VIQUES                    | RUPERTO TORIBIO GONZALES                       |        1362 |        262 |        440 |              69 |            32 |                  0 |           803 |
 |   110306 | JUNIN          | JAUJA                   | EL MANTARO                | FELIX NINAHUANCA PEREZ                         |        1880 |       1001 |        264 |              22 |            40 |                  0 |          1327 |
@@ -421,9 +372,9 @@
 |   121104 | LA LIBERTAD    | GRAN CHIMU              | SAYAPULLO                 | CARLOS PATRICIO RODRIGUEZ CABEZA               |        3571 |        878 |        696 |             226 |           206 |                  0 |          2006 |
 |   121104 | LA LIBERTAD    | GRAN CHIMU              | SAYAPULLO                 | JOSE PAULINO CARRASCO VENTURA                  |        3571 |        936 |        760 |             236 |            74 |                  0 |          2006 |
 |   121104 | LA LIBERTAD    | GRAN CHIMU              | SAYAPULLO                 | NESTOR MURILLO REYES                           |        3571 |        936 |        744 |             257 |            69 |                  0 |          2006 |
-|   121104 | LA LIBERTAD    | GRAN CHIMU              | SAYAPULLO                 | SANTOS MARIA BRICEÃ‘O SEGURA                    |        3571 |        945 |        735 |             253 |            73 |                  0 |          2006 |
+|   121104 | LA LIBERTAD    | GRAN CHIMU              | SAYAPULLO                 | SANTOS MARIA BRICEÑO SEGURA                    |        3571 |        945 |        735 |             253 |            73 |                  0 |          2006 |
 |   121104 | LA LIBERTAD    | GRAN CHIMU              | SAYAPULLO                 | TEODULFO DANTE HARO RAFAEL                     |        3571 |        970 |        802 |             147 |            81 |                  0 |          2000 |
-|   121203 | LA LIBERTAD    | VIRU                    | GUADALUPITO               | PEDRO JESUS MIÃ‘ANO MUÃ‘OZ                       |        1138 |        554 |        363 |              12 |            27 |                  0 |           956 |
+|   121203 | LA LIBERTAD    | VIRU                    | GUADALUPITO               | PEDRO JESUS MIÑANO MUÑOZ                       |        1138 |        554 |        363 |              12 |            27 |                  0 |           956 |
 |   130108 | LAMBAYEQUE     | CHICLAYO                | OYOTUN                    | ABELARDO GONZALEZ CENTURION                    |        5362 |       1611 |       1706 |             418 |            98 |                  0 |          3833 |
 |   130108 | LAMBAYEQUE     | CHICLAYO                | OYOTUN                    | CARDENIO ANTONIO AGUINAGA GUERRERO             |        5362 |       1777 |       1566 |             398 |            96 |                  0 |          3837 |
 |   130108 | LAMBAYEQUE     | CHICLAYO                | OYOTUN                    | FRANCISCO DURAND TENORIO                       |        5362 |       1775 |       1612 |             355 |            96 |                  0 |          3838 |
@@ -432,15 +383,15 @@
 |   130108 | LAMBAYEQUE     | CHICLAYO                | OYOTUN                    | ROSA EMERITA GONZALES PERALES                  |        5362 |       1690 |       1633 |             411 |           101 |                  0 |          3835 |
 |   130117 | LAMBAYEQUE     | CHICLAYO                | PATAPO                    | DANILO PEREZ GONZALES                          |        7837 |       2513 |       2721 |            1161 |           428 |                  0 |          6823 |
 |   130117 | LAMBAYEQUE     | CHICLAYO                | PATAPO                    | JOSE SEGUNDO RUIZ DIAZ                         |        7837 |       2786 |       3132 |             439 |           466 |                  0 |          6823 |
-|   130202 | LAMBAYEQUE     | FERREÃ‘AFE               | INCAHUASI                 | CRISTOBAL RODRIGUEZ CARLOS                     |        4821 |       1865 |        706 |             214 |           499 |                  0 |          3284 |
+|   130202 | LAMBAYEQUE     | FERREÑAFE               | INCAHUASI                 | CRISTOBAL RODRIGUEZ CARLOS                     |        4821 |       1865 |        706 |             214 |           499 |                  0 |          3284 |
 |   140120 | LIMA           | LIMA                    | PUNTA HERMOSA             | GERALDO CASTRO GARCIA                          |        4705 |       1972 |       1048 |              38 |            50 |                  0 |          3108 |
 |   140120 | LIMA           | LIMA                    | PUNTA HERMOSA             | GLORIA ANTONIETA LIZANO HERNANDEZ DE MATSUKAWA |        4705 |       1825 |       1044 |             194 |            45 |                  0 |          3108 |
 |   140120 | LIMA           | LIMA                    | PUNTA HERMOSA             | MAXIMO COTRINA ELORRIAGA                       |        4705 |       1843 |        996 |             221 |            48 |                  0 |          3108 |
 |   140120 | LIMA           | LIMA                    | PUNTA HERMOSA             | VICTOR EDUARDO GOMEZ YANGALI                   |        4705 |       1811 |       1053 |             197 |            47 |                  0 |          3108 |
 |   140208 | LIMA           | CAJATAMBO               | MANAS                     | NELSON REMBERTO REQUEJO PORTAL                 |         469 |        168 |         78 |              35 |             9 |                  0 |           290 |
 |   140208 | LIMA           | CAJATAMBO               | MANAS                     | VICTORIO GIL GOMEZ MONTESINOS                  |         469 |         89 |        182 |              10 |             9 |                  0 |           290 |
-|   140409 | LIMA           | CAÃ‘ETE                  | NUEVO IMPERIAL            | ANDRES AQUILINO ASIN MELENDEZ                  |        7804 |       2942 |       2520 |             315 |           294 |                  0 |          6071 |
-|   140409 | LIMA           | CAÃ‘ETE                  | NUEVO IMPERIAL            | LORENZO PABLO GUTIERREZ LUYO                   |        7804 |       2584 |       1876 |            1319 |           255 |                  0 |          6034 |
+|   140409 | LIMA           | CAÑETE                  | NUEVO IMPERIAL            | ANDRES AQUILINO ASIN MELENDEZ                  |        7804 |       2942 |       2520 |             315 |           294 |                  0 |          6071 |
+|   140409 | LIMA           | CAÑETE                  | NUEVO IMPERIAL            | LORENZO PABLO GUTIERREZ LUYO                   |        7804 |       2584 |       1876 |            1319 |           255 |                  0 |          6034 |
 |   140602 | LIMA           | HUAROCHIRI              | ANTIOQUIA                 | ANGEL ELOY RAMIREZ RAMIREZ                     |         955 |        321 |        341 |              28 |             8 |                  0 |           698 |
 |   140602 | LIMA           | HUAROCHIRI              | ANTIOQUIA                 | BENIGNO PAULO GOMEZ ESCRIBA                    |         955 |        247 |        341 |             101 |             9 |                  0 |           698 |
 |   140602 | LIMA           | HUAROCHIRI              | ANTIOQUIA                 | ELIZABETH EMPERATRIZ REYES DE NARCISO          |         955 |        281 |        301 |             106 |            10 |                  0 |           698 |
@@ -457,7 +408,7 @@
 |   140619 | LIMA           | HUAROCHIRI              | SAN JUAN DE TANTARANCHE   | FRANCISCO FERRIOL QUISPILAY MORALES            |         238 |        100 |         62 |               9 |             4 |                  0 |           175 |
 |   140619 | LIMA           | HUAROCHIRI              | SAN JUAN DE TANTARANCHE   | JUAN EDGARDO VILLA ARANA                       |         238 |         94 |         68 |               7 |             6 |                  0 |           175 |
 |   140619 | LIMA           | HUAROCHIRI              | SAN JUAN DE TANTARANCHE   | JUANA ARMAS DE REYES                           |         238 |        104 |         59 |               9 |             3 |                  0 |           175 |
-|   140619 | LIMA           | HUAROCHIRI              | SAN JUAN DE TANTARANCHE   | MARIA QUIÃ‘ONES HUARINGA                        |         238 |        103 |         60 |               9 |             3 |                  0 |           175 |
+|   140619 | LIMA           | HUAROCHIRI              | SAN JUAN DE TANTARANCHE   | MARIA QUIÑONES HUARINGA                        |         238 |        103 |         60 |               9 |             3 |                  0 |           175 |
 |   140619 | LIMA           | HUAROCHIRI              | SAN JUAN DE TANTARANCHE   | NORA HUAYRE LAZO                               |         238 |        108 |         54 |               9 |             4 |                  0 |           175 |
 |   140619 | LIMA           | HUAROCHIRI              | SAN JUAN DE TANTARANCHE   | TEODORO URBANO IGNACIO GRANADOS                |         238 |         98 |         64 |              10 |             3 |                  0 |           175 |
 |   140625 | LIMA           | HUAROCHIRI              | SANTA EULALIA             | ALFREDO SANCHEZ NEYRA                          |        4340 |       1142 |       1502 |             291 |           100 |                  0 |          3035 |
@@ -476,7 +427,7 @@
 |   140703 | LIMA           | YAUYOS                  | AYAUCA                    | HIPOLITO OSCAR RODRIGUEZ NAPANGA               |         559 |        179 |         85 |              57 |             6 |                  0 |           327 |
 |   140703 | LIMA           | YAUYOS                  | AYAUCA                    | MANUEL BELISARIO RODRIGUEZ GALVAN              |         559 |        177 |         73 |              72 |             5 |                  0 |           327 |
 |   140703 | LIMA           | YAUYOS                  | AYAUCA                    | TEODORO MARCELO CHAVEZ                         |         559 |        199 |         87 |              29 |            12 |                  0 |           327 |
-|   140703 | LIMA           | YAUYOS                  | AYAUCA                    | VILMA ELSA TARMEÃ‘O RODRIGUEZ                   |         559 |        195 |         71 |              53 |             8 |                  0 |           327 |
+|   140703 | LIMA           | YAUYOS                  | AYAUCA                    | VILMA ELSA TARMEÑO RODRIGUEZ                   |         559 |        195 |         71 |              53 |             8 |                  0 |           327 |
 |   140705 | LIMA           | YAUYOS                  | AZANGARO                  | BENERANDO RODRIGUEZ CHAVEZ                     |         364 |        159 |         21 |              11 |             3 |                  0 |           194 |
 |   140705 | LIMA           | YAUYOS                  | AZANGARO                  | ELIAS GUTIERREZ REYNOSO                        |         364 |        155 |         19 |              17 |             3 |                  0 |           194 |
 |   140705 | LIMA           | YAUYOS                  | AZANGARO                  | NICOLAS DEVARI QUISPE CHAVEZ                   |         364 |        156 |         24 |              11 |             3 |                  0 |           194 |
@@ -531,12 +482,12 @@
 |   150503 | LORETO         | UCAYALI                 | PADRE MARQUEZ             | ERNESTO DONAYRE AGUIRRE                        |        2573 |       1138 |        566 |             102 |            12 |                  0 |          1818 |
 |   150503 | LORETO         | UCAYALI                 | PADRE MARQUEZ             | GILBERTO RUIZ PEZO                             |        2573 |       1131 |        561 |             119 |             7 |                  0 |          1818 |
 |   150503 | LORETO         | UCAYALI                 | PADRE MARQUEZ             | ORLANDO CAMACHO HIDALGO                        |        2573 |       1142 |        566 |              99 |            11 |                  0 |          1818 |
-|   150503 | LORETO         | UCAYALI                 | PADRE MARQUEZ             | PETRONA SALDAÃ‘A DE BECERRA                     |        2573 |        920 |        516 |              71 |           311 |                  0 |          1818 |
+|   150503 | LORETO         | UCAYALI                 | PADRE MARQUEZ             | PETRONA SALDAÑA DE BECERRA                     |        2573 |        920 |        516 |              71 |           311 |                  0 |          1818 |
 |   150504 | LORETO         | UCAYALI                 | PAMPA HERMOZA             | ARISTIDES GUEVARA PEZO                         |        1460 |        503 |        363 |              45 |            51 |                  0 |           962 |
 |   150504 | LORETO         | UCAYALI                 | PAMPA HERMOZA             | CONSUELO REATEGUI AREVALO DE UCEDA             |        1460 |        487 |        413 |              48 |            14 |                  0 |           962 |
 |   150504 | LORETO         | UCAYALI                 | PAMPA HERMOZA             | JAIME ZAVALETA VILLACORTA                      |        1460 |        495 |        439 |              18 |            10 |                  0 |           962 |
 |   150504 | LORETO         | UCAYALI                 | PAMPA HERMOZA             | JUAN TELESFORO PACAYA LOPEZ                    |        1460 |        503 |        377 |              42 |            40 |                  0 |           962 |
-|   150504 | LORETO         | UCAYALI                 | PAMPA HERMOZA             | JUANITO RAMIREZ MUÃ‘OZ                          |        1460 |        465 |        387 |              51 |            59 |                  0 |           962 |
+|   150504 | LORETO         | UCAYALI                 | PAMPA HERMOZA             | JUANITO RAMIREZ MUÑOZ                          |        1460 |        465 |        387 |              51 |            59 |                  0 |           962 |
 |   150504 | LORETO         | UCAYALI                 | PAMPA HERMOZA             | REYNERIO TANANTA PUYO                          |        1460 |        504 |        405 |              46 |             7 |                  0 |           962 |
 |   150602 | LORETO         | MARISCAL RAMON CASTILLA | PEBAS                     | ARTIDORO REQUEJO SANCHEZ                       |        5136 |       1495 |       1541 |             521 |            80 |                  0 |          3637 |
 |   150602 | LORETO         | MARISCAL RAMON CASTILLA | PEBAS                     | EDUARDO GONZALO TRUJILLO CAZORLA               |        5136 |       1767 |       1638 |             136 |            96 |                  0 |          3637 |
@@ -553,12 +504,12 @@
 |   160303 | MADRE DE DIOS  | TAHUAMANU               | TAHUAMANU                 | RODOLFO ARIMUYA TAPUY                          |         610 |        226 |        174 |              15 |            14 |                  0 |           429 |
 |   160303 | MADRE DE DIOS  | TAHUAMANU               | TAHUAMANU                 | SARA ABANO VEINTEMILLA                         |         610 |        239 |        149 |              31 |            10 |                  0 |           429 |
 |   160303 | MADRE DE DIOS  | TAHUAMANU               | TAHUAMANU                 | VICTOR MACOCHOA NOA                            |         610 |        229 |        150 |              39 |            11 |                  0 |           429 |
-|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÃ‘A                    | FLORO ERASMO VENTURA CACERES                   |        1301 |        716 |        119 |              56 |            19 |                  0 |           910 |
-|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÃ‘A                    | MATEO MAMANI CABANA                            |        1301 |        741 |         77 |              70 |            22 |                  0 |           910 |
-|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÃ‘A                    | PORFIRIO PARI VENTURA                          |        1301 |        736 |        100 |              47 |            27 |                  0 |           910 |
-|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÃ‘A                    | RUFO ERNESTO CASILLA CONDORI                   |        1301 |        733 |         89 |              71 |            17 |                  0 |           910 |
-|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÃ‘A                    | SOFIA ROQUE CASILLA                            |        1301 |        737 |         84 |              68 |            21 |                  0 |           910 |
-|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÃ‘A                    | VIDAL MAMANI MAMANI                            |        1301 |        752 |         76 |              59 |            22 |                  0 |           909 |
+|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÑA                    | FLORO ERASMO VENTURA CACERES                   |        1301 |        716 |        119 |              56 |            19 |                  0 |           910 |
+|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÑA                    | MATEO MAMANI CABANA                            |        1301 |        741 |         77 |              70 |            22 |                  0 |           910 |
+|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÑA                    | PORFIRIO PARI VENTURA                          |        1301 |        736 |        100 |              47 |            27 |                  0 |           910 |
+|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÑA                    | RUFO ERNESTO CASILLA CONDORI                   |        1301 |        733 |         89 |              71 |            17 |                  0 |           910 |
+|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÑA                    | SOFIA ROQUE CASILLA                            |        1301 |        737 |         84 |              68 |            21 |                  0 |           910 |
+|   170204 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | ICHUÑA                    | VIDAL MAMANI MAMANI                            |        1301 |        752 |         76 |              59 |            22 |                  0 |           909 |
 |   170205 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | LA CAPILLA                | ANASTACIA RAMOS ALE                            |         350 |         78 |        131 |              51 |             3 |                  0 |           263 |
 |   170205 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | LA CAPILLA                | DARIO CHIRE CHIRE                              |         350 |         78 |        146 |              35 |             4 |                  0 |           263 |
 |   170205 | MOQUEGUA       | GENERAL SANCHEZ CERRO   | LA CAPILLA                | FELIX JAIME CHAMA ALE                          |         350 |         75 |        146 |              39 |             3 |                  0 |           263 |
@@ -607,7 +558,7 @@
 |   200306 | PUNO           | CARABAYA                | CRUCERO                   | LUZ QUISPE LINO                                |        3918 |       1834 |       1065 |             178 |           100 |                  0 |          3177 |
 |   200306 | PUNO           | CARABAYA                | CRUCERO                   | NICOLAS VICTORIANO QUISPE CALLO                |        3918 |       1789 |       1088 |             211 |            89 |                  0 |          3177 |
 |   200605 | PUNO           | LAMPA                   | OCUVIRI                   | AMERICO MARIN CALIZAYA QUISPE                  |         913 |        375 |        311 |               5 |            57 |                  0 |           748 |
-|   201002 | PUNO           | YUNGUYO                 | UNICACHI                  | CANDELARIA AVENDAÃ‘O DE MAMANI                  |        1264 |        500 |        220 |              58 |            30 |                  0 |           808 |
+|   201002 | PUNO           | YUNGUYO                 | UNICACHI                  | CANDELARIA AVENDAÑO DE MAMANI                  |        1264 |        500 |        220 |              58 |            30 |                  0 |           808 |
 |   201002 | PUNO           | YUNGUYO                 | UNICACHI                  | EUSEBIO COARITA UCHASARA                       |        1264 |        512 |        214 |              57 |            25 |                  0 |           808 |
 |   201002 | PUNO           | YUNGUYO                 | UNICACHI                  | FELIX YAPUCHURA UCHASARA                       |        1264 |        494 |        225 |              59 |            30 |                  0 |           808 |
 |   201002 | PUNO           | YUNGUYO                 | UNICACHI                  | NICOLAS UCHARICO CUNURANA                      |        1264 |        511 |        232 |              35 |            30 |                  0 |           808 |
@@ -621,7 +572,7 @@
 |   210402 | SAN MARTIN     | MARISCAL CACERES        | CAMPANILLA                | HILTER TENAZOA FLORES                          |        2377 |        662 |        356 |             229 |            50 |                  0 |          1297 |
 |   210402 | SAN MARTIN     | MARISCAL CACERES        | CAMPANILLA                | PEPITO MIRANDA TENAZOA                         |        2377 |        689 |        509 |              47 |            52 |                  0 |          1297 |
 |   210404 | SAN MARTIN     | MARISCAL CACERES        | PACHIZA                   | ALEXANDER LOPEZ GRANDEZ                        |        1867 |        538 |        377 |             194 |            39 |                  0 |          1148 |
-|   210404 | SAN MARTIN     | MARISCAL CACERES        | PACHIZA                   | EMILSE NAVARRO MUÃ‘OZ                           |        1867 |        525 |        380 |             208 |            35 |                  0 |          1148 |
+|   210404 | SAN MARTIN     | MARISCAL CACERES        | PACHIZA                   | EMILSE NAVARRO MUÑOZ                           |        1867 |        525 |        380 |             208 |            35 |                  0 |          1148 |
 |   210404 | SAN MARTIN     | MARISCAL CACERES        | PACHIZA                   | LILA CONSUELO VASQUEZ DE SOLANO                |        1867 |        552 |        493 |              61 |            42 |                  0 |          1148 |
 |   210404 | SAN MARTIN     | MARISCAL CACERES        | PACHIZA                   | LLONY VALLES SANTAMARIA                        |        1867 |        528 |        374 |             209 |            37 |                  0 |          1148 |
 |   210604 | SAN MARTIN     | SAN MARTIN              | CACATACHI                 | ASUNCION PAZ LOPEZ                             |        1763 |        475 |        788 |              73 |            29 |                  0 |          1365 |
@@ -635,19 +586,19 @@
 |   210804 | SAN MARTIN     | TOCACHE                 | SHUNTE                    | EVER MEDINA AGUIRRE                            |         351 |         89 |        137 |              32 |            12 |                  0 |           270 |
 |   210804 | SAN MARTIN     | TOCACHE                 | SHUNTE                    | KARINA LUZ VIERA FLORES                        |         351 |         83 |        147 |              30 |            10 |                  0 |           270 |
 |   210804 | SAN MARTIN     | TOCACHE                 | SHUNTE                    | MANUEL CARRANZA ACOSTA                         |         351 |         94 |        129 |              34 |            13 |                  0 |           270 |
-|   210804 | SAN MARTIN     | TOCACHE                 | SHUNTE                    | MAURO AVENDAÃ‘O ESCUDERO                        |         351 |        106 |        127 |              26 |            11 |                  0 |           270 |
+|   210804 | SAN MARTIN     | TOCACHE                 | SHUNTE                    | MAURO AVENDAÑO ESCUDERO                        |         351 |        106 |        127 |              26 |            11 |                  0 |           270 |
 |   210804 | SAN MARTIN     | TOCACHE                 | SHUNTE                    | PEDRO IRALDO BOGARIN VALDIVIEZO                |         351 |         60 |        175 |              26 |             9 |                  0 |           270 |
-|   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | CORNELIA GRANDEZ SHUÃ‘A DE LUNA                 |        1498 |        503 |        480 |             110 |            32 |                  0 |          1125 |
+|   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | CORNELIA GRANDEZ SHUÑA DE LUNA                 |        1498 |        503 |        480 |             110 |            32 |                  0 |          1125 |
 |   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | JOSE LUIS PEZO TORRES                          |        1498 |        501 |        497 |              94 |            33 |                  0 |          1125 |
 |   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | NEID RENGIFO VELA                              |        1498 |        516 |        529 |              46 |            34 |                  0 |          1125 |
-|   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | OSWALDO ISUIZA USHIÃ‘AHUA                       |        1498 |        492 |        501 |              97 |            35 |                  0 |          1125 |
+|   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | OSWALDO ISUIZA USHIÑAHUA                       |        1498 |        492 |        501 |              97 |            35 |                  0 |          1125 |
 |   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | VIDAL FASANANDO PINCHI                         |        1498 |        494 |        489 |             109 |            33 |                  0 |          1125 |
-|   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | WILFREDO USHIÃ‘AHUA RENGIFO                     |        1498 |        497 |        494 |              99 |            35 |                  0 |          1125 |
-|   210907 | SAN MARTIN     | PICOTA                  | SAN HILARION              | AMADOR PEÃ‘AHERRERA SALDAÃ‘A                     |        1620 |        706 |        521 |              14 |            33 |                  0 |          1274 |
+|   210902 | SAN MARTIN     | PICOTA                  | BUENOS AIRES              | WILFREDO USHIÑAHUA RENGIFO                     |        1498 |        497 |        494 |              99 |            35 |                  0 |          1125 |
+|   210907 | SAN MARTIN     | PICOTA                  | SAN HILARION              | AMADOR PEÑAHERRERA SALDAÑA                     |        1620 |        706 |        521 |              14 |            33 |                  0 |          1274 |
 |   210907 | SAN MARTIN     | PICOTA                  | SAN HILARION              | FELIX JIMENEZ ALBERCA                          |        1620 |        694 |        468 |              81 |            31 |                  0 |          1274 |
 |   210907 | SAN MARTIN     | PICOTA                  | SAN HILARION              | MARLENY GALVEZ GARCIA                          |        1620 |        699 |        491 |              55 |            29 |                  0 |          1274 |
 |   210907 | SAN MARTIN     | PICOTA                  | SAN HILARION              | MIRIAN SEIJAS DIAZ                             |        1620 |        683 |        498 |              64 |            29 |                  0 |          1274 |
-|   210909 | SAN MARTIN     | PICOTA                  | TRES UNIDOS               | CAYO FASANANDO USHIÃ‘AHUA                       |        1319 |        344 |        623 |              48 |            13 |                  0 |          1028 |
+|   210909 | SAN MARTIN     | PICOTA                  | TRES UNIDOS               | CAYO FASANANDO USHIÑAHUA                       |        1319 |        344 |        623 |              48 |            13 |                  0 |          1028 |
 |   210909 | SAN MARTIN     | PICOTA                  | TRES UNIDOS               | ERNESTO CARBAJAL PINCHI                        |        1319 |        367 |        552 |              68 |            41 |                  0 |          1028 |
 |   210909 | SAN MARTIN     | PICOTA                  | TRES UNIDOS               | HUGO GUERRA MOZOMBITE                          |        1319 |        350 |        623 |              42 |            13 |                  0 |          1028 |
 |   210909 | SAN MARTIN     | PICOTA                  | TRES UNIDOS               | JAIME LINARES GARCIA                           |        1319 |        365 |        638 |               9 |            16 |                  0 |          1028 |
@@ -656,7 +607,7 @@
 |   220210 | TACNA          | TARATA                  | SITAJARA                  | JOSE ESTEBAN QUISPE CARDENAS                   |         224 |         64 |        108 |               1 |             4 |                  0 |           177 |
 |   220403 | TACNA          | CANDARAVE               | CURIBAYA                  | JAIME ELIAS FLORES ALCAZAR                     |         159 |         70 |         60 |               2 |             2 |                  0 |           134 |
 |   230103 | TUMBES         | TUMBES                  | LA CRUZ                   | CLOTILDE PILAR FERNANDEZ INFANTE               |        4171 |       2245 |       1144 |              29 |            76 |                  0 |          3494 |
-|   230304 | TUMBES         | ZARUMILLA               | AGUAS VERDES              | JORGE ALBERCA PARIÃ‘AS                          |        3905 |       1311 |       1006 |             507 |            95 |                  0 |          2919 |
+|   230304 | TUMBES         | ZARUMILLA               | AGUAS VERDES              | JORGE ALBERCA PARIÑAS                          |        3905 |       1311 |       1006 |             507 |            95 |                  0 |          2919 |
 |   230304 | TUMBES         | ZARUMILLA               | AGUAS VERDES              | JOSE BENITES OLAYA                             |        3905 |       1328 |        980 |             518 |            93 |                  0 |          2919 |
 |   230304 | TUMBES         | ZARUMILLA               | AGUAS VERDES              | JOSE GUERRERO CARRILLO                         |        3905 |       1300 |        979 |             392 |           248 |                  0 |          2919 |
 |   230304 | TUMBES         | ZARUMILLA               | AGUAS VERDES              | MODESTO GARCIA MENDEZ                          |        3905 |       1328 |        986 |             507 |            98 |                  0 |          2919 |
@@ -674,197 +625,3 @@
 |   250203 | UCAYALI        | PADRE ABAD              | CURIMANA                  | LADISLAO OBREGON DIAZ                          |        1126 |        510 |        207 |             108 |            33 |                  0 |           858 |
 |   250203 | UCAYALI        | PADRE ABAD              | CURIMANA                  | LINO RIMACHI MOZOMBITE                         |        1126 |        447 |        166 |              88 |           155 |                  0 |           856 |
 |   250203 | UCAYALI        | PADRE ABAD              | CURIMANA                  | LISETH RAMIREZ MARIN                           |        1126 |        519 |        208 |             118 |            13 |                  0 |           858 |
-
-## Resultados del modelo SVM
-### Reporte de clasificación con kernel 'rbf':
-              precision    recall  f1-score   support
-
-         125       0.00      0.00      0.00         2
-         137       1.00      1.00      1.00         2
-         158       0.00      0.00      0.00         1
-         165       0.00      0.00      0.00         1
-         172       0.00      0.00      0.00         1
-         175       0.00      0.00      0.00         0
-         178       0.00      0.00      0.00         1
-         182       0.00      0.00      0.00         1
-         194       0.00      0.00      0.00         1
-         198       0.00      0.00      0.00         1
-         230       0.50      0.50      0.50         2
-         238       0.00      0.00      0.00         1
-         239       0.00      0.00      0.00         1
-         245       0.00      0.00      0.00         3
-         247       0.00      0.00      0.00         2
-         263       0.20      1.00      0.33         1
-         269       0.00      0.00      0.00         0
-         270       1.00      1.00      1.00         2
-         297       0.00      0.00      0.00         1
-         298       0.00      0.00      0.00         1
-         310       0.00      0.00      0.00         1
-         316       0.00      0.00      0.00         0
-         318       0.00      0.00      0.00         1
-         327       0.25      1.00      0.40         1
-         328       0.00      0.00      0.00         4
-         332       0.00      0.00      0.00         1
-         341       0.50      1.00      0.67         1
-         362       0.00      0.00      0.00         2
-         365       0.14      1.00      0.25         1
-         374       0.00      0.00      0.00         0
-         391       0.00      0.00      0.00         1
-         399       0.00      0.00      0.00         0
-         429       0.50      0.50      0.50         2
-         443       0.20      1.00      0.33         1
-         457       0.00      0.00      0.00         4
-         476       0.00      0.00      0.00         1
-         479       0.00      0.00      0.00         1
-         483       0.00      0.00      0.00         1
-         485       0.00      0.00      0.00         1
-         504       1.00      0.33      0.50         3
-         540       0.00      0.00      0.00         1
-         556       0.11      1.00      0.20         1
-         592       0.00      0.00      0.00         1
-         698       0.50      1.00      0.67         1
-         703       0.00      0.00      0.00         2
-         743       0.14      1.00      0.25         1
-         748       0.00      0.00      0.00         2
-         757       0.00      0.00      0.00         3
-         762       1.00      1.00      1.00         2
-         780       0.00      0.00      0.00         1
-         808       0.00      0.00      0.00         1
-         832       0.00      0.00      0.00         1
-         833       0.00      0.00      0.00         1
-         837       0.00      0.00      0.00         1
-         841       0.25      0.50      0.33         2
-         854       0.00      0.00      0.00         1
-         858       0.50      1.00      0.67         1
-         909       0.00      0.00      0.00         1
-         910       0.50      0.50      0.50         2
-         934       0.00      0.00      0.00         3
-         937       0.00      0.00      0.00         3
-         945       0.00      0.00      0.00         3
-         952       0.00      0.00      0.00         4
-         953       0.00      0.00      0.00         0
-         962       0.00      0.00      0.00         2
-         966       0.12      1.00      0.22         1
-        1028       0.00      0.00      0.00         0
-        1033       0.67      1.00      0.80         2
-        1050       0.00      0.00      0.00         1
-        1102       0.00      0.00      0.00         5
-        1125       0.00      0.00      0.00         1
-        1134       0.00      0.00      0.00         4
-        1148       0.00      0.00      0.00         0
-        1176       0.00      0.00      0.00         1
-        1183       0.00      0.00      0.00         2
-        1250       0.00      0.00      0.00         2
-        1274       0.00      0.00      0.00         2
-        1277       0.67      0.67      0.67         3
-        1283       0.00      0.00      0.00         1
-        1293       0.25      1.00      0.40         1
-        1316       0.25      0.67      0.36         3
-        1325       0.00      0.00      0.00         1
-        1326       0.00      0.00      0.00         0
-        1331       0.00      0.00      0.00         1
-        1335       0.00      0.00      0.00         1
-        1336       0.00      0.00      0.00         3
-        1344       0.00      0.00      0.00         2
-        1365       0.00      0.00      0.00         1
-        1407       0.00      0.00      0.00         2
-        1408       0.00      0.00      0.00         1
-        1421       0.00      0.00      0.00         1
-        1442       0.50      0.33      0.40         3
-        1450       0.00      0.00      0.00         1
-        1453       0.50      1.00      0.67         1
-        1476       0.50      1.00      0.67         1
-        1567       0.00      0.00      0.00         1
-        1578       0.00      0.00      0.00         1
-        1579       0.00      0.00      0.00         1
-        1594       0.00      0.00      0.00         1
-        1707       0.00      0.00      0.00         2
-        1720       0.00      0.00      0.00         1
-        1751       0.00      0.00      0.00         0
-        1757       0.00      0.00      0.00         0
-        1818       0.00      0.00      0.00         1
-        1829       0.50      1.00      0.67         1
-        1841       1.00      0.50      0.67         2
-        1979       0.00      0.00      0.00         2
-        2006       0.50      0.50      0.50         2
-        2054       0.00      0.00      0.00         1
-        2056       0.00      0.00      0.00         0
-        2110       1.00      1.00      1.00         2
-        2179       0.00      0.00      0.00         0
-        2227       0.00      0.00      0.00         0
-        2320       0.67      1.00      0.80         2
-        2410       1.00      1.00      1.00         1
-        2770       1.00      1.00      1.00         1
-        2919       1.00      0.67      0.80         3
-        3035       0.00      0.00      0.00         1
-        3069       0.00      0.00      0.00         1
-        3071       0.50      1.00      0.67         1
-        3108       0.50      1.00      0.67         1
-        3177       0.67      1.00      0.80         2
-        3199       0.00      0.00      0.00         1
-        3460       0.40      1.00      0.57         2
-        3630       0.00      0.00      0.00         1
-        3637       0.00      0.00      0.00         2
-        3838       0.00      0.00      0.00         0
-        3888       0.00      0.00      0.00         1
-        3890       0.00      0.00      0.00         0
-        3891       0.00      0.00      0.00         2
-        4009       0.00      0.00      0.00         1
-        5595       0.50      1.00      0.67         1
-        5596       0.00      0.00      0.00         3
-        6034       0.00      0.00      0.00         1
-        6823       0.00      0.00      0.00         0
-
-    accuracy                           0.26       187
-   macro avg       0.16      0.24      0.17       187
-weighted avg       0.20      0.26      0.21       187
-
-Exactitud del modelo con kernel 'rbf': 0.2620320855614973
-
-## Valor Esperado Condicional (VEC)
-
-En este proyecto se realizan c�lculos del **Valor Esperado Condicional (VEC)** utilizando datos de votaci�n. El VEC es una medida que nos da el valor promedio de una variable (por ejemplo, el total de votos, los votos nulos o los votos blancos) bajo una condici�n espec�fica. 
-
-A continuaci�n se presentan los c�lculos realizados en el c�digo:
-
-### C�lculo 1: VEC de VOTOS TOTAL dado ELECTORES > 1000
-
-El **Valor Esperado Condicional de VOTOS TOTAL dado ELECTORES > 1000** es el promedio de los votos totales cuando el n�mero de electores supera los 1000.
-
-#### Resultados:
-- **Valor esperado condicional de VOTOS TOTAL dado ELECTORES > 1000**: 1837.64
-
-**Explicaci�n**:  
-Este c�lculo nos proporciona el valor promedio de los votos totales cuando sabemos que el n�mero de electores en la regi�n es mayor a 1000. Este tipo de c�lculo es �til cuando se desea entender c�mo el n�mero de electores influye en el total de votos, pero solo para los casos en que los electores superan cierto umbral.
-
----
-
-### C�lculo 2: VEC de VOTOS NULOS dado VOTOS TOTAL > 500
-
-El **Valor Esperado Condicional de VOTOS NULOS dado VOTOS TOTAL > 500** es el promedio de los votos nulos bajo la condici�n de que los votos totales superen los 500.
-
-#### Resultados:
-- **Valor esperado condicional de VOTOS NULOS dado VOTOS TOTAL > 500**: 71.23
-
-**Explicaci�n**:  
-Este c�lculo nos indica el valor promedio de los votos nulos cuando el n�mero total de votos en una regi�n es mayor a 500. Esta informaci�n es importante para comprender c�mo las elecciones pueden estar influenciadas por el desinter�s o el rechazo hacia las opciones propuestas. Un VEC alto en votos nulos podr�a indicar que los votantes prefieren no votar o no est�n conformes con las opciones disponibles.
-
----
-
-### C�lculo 3: Comparaci�n de VEC de VOTOS BLANCOS para diferentes rangos de ELECTORES
-
-En este c�lculo, se comparan los valores esperados condicionales de los votos blancos en dos grupos de electores: aquellos con menos de o igual a 1000 electores, y aquellos con m�s de 1000 electores.
-
-#### Resultados:
-- **VEC de VOTOS BLANCOS dado ELECTORES <= 1000**: 33.63
-- **VEC de VOTOS BLANCOS dado ELECTORES > 1000**: 194.31
-
-**Explicaci�n**:  
-El VEC de votos blancos nos da una idea del porcentaje de votos que no favorecen a ninguna opci�n en particular. En este caso, se calcula para dos grupos diferentes de electores: aquellos con 1000 o menos electores, y aquellos con m�s de 1000. Comparar estos dos valores puede revelar si los votantes en �reas m�s grandes tienden a votar en blanco con mayor frecuencia, lo cual podr�a estar relacionado con factores como el nivel de desconfianza en los partidos pol�ticos o la calidad de las opciones disponibles.
-
----
-
-### Conclusi�n
-
-Los c�lculos realizados nos ofrecen una visi�n m�s clara de c�mo las condiciones (como el n�mero de electores o el total de votos) afectan ciertos resultados de las elecciones. Estas m�tricas son �tiles para entender patrones de comportamiento electoral y ayudar a los analistas a identificar posibles �reas de intervenci�n o mejora en los procesos electorales.
-
