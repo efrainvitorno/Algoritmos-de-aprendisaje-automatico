@@ -75,8 +75,8 @@ resultados += (
     f"- **Resultado**: El VEC para **ELECTORES <= 1000** es de {valor_esperado_menor_1000:.2f}, mientras que el VEC para **ELECTORES > 1000** es de {valor_esperado_mayor_1000:.2f}.\n\n"
     f"- **Interpretación**: Estos valores muestran que, en promedio, las localidades con menos de 1000 electores tienen un número distinto "
     f"de votos blancos comparado con aquellas que tienen más de 1000 electores. Esto puede ser indicativo de patrones de desinterés, "
-    f"desconfianza en los candidatos o falta de información en diferentes contextos electorales. El cambio en el número de votos blancos "
-    f"según el tamaño del electorado puede revelar distintas actitudes políticas o comportamientos en las urnas.\n\n"
+    f"desconfianza en los candidatos o falta de información en diferentes contextos electorales. \n\n"
+    f"El cambio en el número de votos blancos según el tamaño del electorado puede revelar distintas actitudes políticas o comportamientos en las urnas.\n\n"
 )
 
 # --------------------------------------------------------------------------------

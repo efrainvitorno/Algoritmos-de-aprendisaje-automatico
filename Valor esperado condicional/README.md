@@ -21,5 +21,7 @@ El **Valor Esperado Condicional** (VEC) es una medida estadística que describe l
 
 - **Resultado**: El VEC para **ELECTORES <= 1000** es de 33.63, mientras que el VEC para **ELECTORES > 1000** es de 194.31.
 
-- **Interpretación**: Estos valores muestran que, en promedio, las localidades con menos de 1000 electores tienen un número distinto de votos blancos comparado con aquellas que tienen más de 1000 electores. Esto puede ser indicativo de patrones de desinterés, desconfianza en los candidatos o falta de información en diferentes contextos electorales. El cambio en el número de votos blancos según el tamaño del electorado puede revelar distintas actitudes políticas o comportamientos en las urnas.
+- **Interpretación**: Estos valores muestran que, en promedio, las localidades con menos de 1000 electores tienen un número distinto de votos blancos comparado con aquellas que tienen más de 1000 electores. Esto puede ser indicativo de patrones de desinterés, desconfianza en los candidatos o falta de información en diferentes contextos electorales. 
+
+El cambio en el número de votos blancos según el tamaño del electorado puede revelar distintas actitudes políticas o comportamientos en las urnas.
 
