@@ -150,7 +150,9 @@ En este caso, el número de **votos a favor (VOTOS SI)** es 441. Este es el valo
 
 Hemos entrenado tres modelos de regresión con regularización: **Ridge**, **Lasso** y **ElasticNet**. A continuación se presentan los **MSE (Mean Squared Error)** de cada modelo en los datos de prueba.
 
-MSE (Ridge): {mse_ridge} MSE (Lasso): {mse_lasso} MSE (ElasticNet): {mse_elasticnet}
+- MSE (Ridge): {mse_ridge} 
+- MSE (Lasso): {mse_lasso} 
+- MSE (ElasticNet): {mse_elasticnet}
 
 
 ### Predicciones para un nuevo conjunto de datos:

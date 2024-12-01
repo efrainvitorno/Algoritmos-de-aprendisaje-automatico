@@ -37,7 +37,9 @@ En este caso, el número de **votos a favor (VOTOS SI)** es 441. Este es el valor
 
 Hemos entrenado tres modelos de regresión con regularización: **Ridge**, **Lasso** y **ElasticNet**. A continuación se presentan los **MSE (Mean Squared Error)** de cada modelo en los datos de prueba.
 
-MSE (Ridge): 239.24802044585567 MSE (Lasso): 40.34049330838059 MSE (ElasticNet): 44603.56133025498
+- MSE (Ridge): 239.24802044585567 
+- MSE (Lasso): 40.34049330838059 
+- MSE (ElasticNet): 44603.56133025498
 
 
 ### Predicciones para un nuevo conjunto de datos:
@@ -50,7 +52,11 @@ Ingresamos los siguientes datos para hacer predicciones con cada uno de los mode
 
 Las predicciones realizadas por cada modelo fueron:
 
-Predicciones de Ridge: [430.19016281] Predicciones de Lasso: [444.46732659] Predicciones de ElasticNet: [541.23592787]
+- Predicciones de Ridge: [430.19016281] 
+
+- Predicciones de Lasso: [444.46732659] 
+
+- Predicciones de ElasticNet: [541.23592787]
 
 Como se puede observar, el modelo de **Lasso** proporciona la predicción más cercana al valor real de **441** (votos a favor), lo que indica que es el modelo que mejor se ajusta a estos datos específicos.
 
