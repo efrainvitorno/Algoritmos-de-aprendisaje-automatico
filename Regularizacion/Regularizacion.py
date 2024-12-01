@@ -163,7 +163,11 @@ Ingresamos los siguientes datos para hacer predicciones con cada uno de los mode
 
 Las predicciones realizadas por cada modelo fueron:
 
-Predicciones de Ridge: {y_pred_ridge_new} Predicciones de Lasso: {y_pred_lasso_new} Predicciones de ElasticNet: {y_pred_elasticnet_new}
+- Predicciones de Ridge: {y_pred_ridge_new} 
+
+- Predicciones de Lasso: {y_pred_lasso_new} 
+
+- Predicciones de ElasticNet: {y_pred_elasticnet_new}
 
 Como se puede observar, el modelo de **Lasso** proporciona la predicción más cercana al valor real de **441** (votos a favor), lo que indica que es el modelo que mejor se ajusta a estos datos específicos.
 
