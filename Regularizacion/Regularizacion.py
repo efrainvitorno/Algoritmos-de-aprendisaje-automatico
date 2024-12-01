@@ -1,64 +1,185 @@
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import Ridge, Lasso, ElasticNet
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import mean_squared_error
+from sklearn.compose import ColumnTransformer
 
 # Cargar los datos desde un archivo CSV (delimitador ";")
 df = pd.read_csv("archivo.csv", delimiter=";")
 
-# Realizar los análisis y cálculos necesarios
-# Agrupar por DEPARTAMENTO y sumar los votos
-resultados_analisis = df.groupby(['DEPARTAMENTO']).agg(
-    {'VOTOS SI': 'sum', 'VOTOS NO': 'sum', 'VOTOS BLANCOS': 'sum', 'VOTOS NULOS': 'sum', 'VOTOS TOTAL': 'sum'}).reset_index()
+# Eliminar columnas irrelevantes
+df = df.drop(columns=["UBIGEO", "DEPARTAMENTO", "PROVINCIA", "DISTRITO", "AUTORIDAD EN CONSULTA", "VOTOS IMPUGNADOS"])
 
-# Crear un gráfico de votos apilados por departamento
-fig, ax = plt.subplots(figsize=(12, 8))
+# Separamos las características (X) y la variable objetivo (y)
+X = df.drop(columns=["VOTOS SI"])  # Eliminamos la columna que queremos predecir
+y = df["VOTOS SI"]
 
-# Definir los valores para el gráfico de votos apilados
-votos_apilados = resultados_analisis[['VOTOS SI', 'VOTOS NO', 'VOTOS BLANCOS', 'VOTOS NULOS']].set_index(resultados_analisis['DEPARTAMENTO'])
-votos_apilados.plot(kind='bar', stacked=True, ax=ax, colormap='Set3')
+# Dividir el conjunto de datos en entrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Añadir títulos y etiquetas
-ax.set_title('Distribución de Votos por Departamento', fontsize=16)
-ax.set_xlabel('Departamento', fontsize=12)
-ax.set_ylabel('Número de Votos', fontsize=12)
+# Crear un preprocesador para las características numéricas
+numerical_columns = ['ELECTORES', 'VOTOS NO', 'VOTOS BLANCOS', 'VOTOS NULOS', 'VOTOS TOTAL']
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('num', StandardScaler(), numerical_columns)  # Escalar las columnas numéricas
+    ])
 
-# Guardar el gráfico como una imagen en la carpeta 'Regularizacion/resultados'
-plt.tight_layout()  # Ajusta el gráfico para evitar que se corten etiquetas
-plt.savefig('votos_apilados.png')
+# Crear pipelines para cada modelo (Ridge, Lasso y ElasticNet)
+ridge_pipeline = Pipeline(steps=[
+    ('preprocessor', preprocessor),
+    ('ridge', Ridge(alpha=1.0))
+])
+
+lasso_pipeline = Pipeline(steps=[
+    ('preprocessor', preprocessor),
+    ('lasso', Lasso(alpha=1.0))
+])
+
+elasticnet_pipeline = Pipeline(steps=[
+    ('preprocessor', preprocessor),
+    ('elasticnet', ElasticNet(alpha=1.0, l1_ratio=0.5))
+])
+
+# Entrenamos los modelos con los datos de entrenamiento
+ridge_pipeline.fit(X_train, y_train)
+lasso_pipeline.fit(X_train, y_train)
+elasticnet_pipeline.fit(X_train, y_train)
+
+# Hacer predicciones con los datos de prueba
+y_pred_ridge = ridge_pipeline.predict(X_test)
+y_pred_lasso = lasso_pipeline.predict(X_test)
+y_pred_elasticnet = elasticnet_pipeline.predict(X_test)
+
+# Evaluar los modelos con MSE
+mse_ridge = mean_squared_error(y_test, y_pred_ridge)
+mse_lasso = mean_squared_error(y_test, y_pred_lasso)
+mse_elasticnet = mean_squared_error(y_test, y_pred_elasticnet)
+
+# Imprimir los MSE de los modelos
+print(f"MSE (Ridge): {mse_ridge}")
+print(f"MSE (Lasso): {mse_lasso}")
+print(f"MSE (ElasticNet): {mse_elasticnet}")
+
+# 1. Definir nuevos datos de entrada (X_new)
+# Asegúrate de que los valores coincidan con la estructura de X_train (sin las columnas eliminadas)
+X_new = pd.DataFrame([
+    [1126, 199, 68, 150, 858]    
+], columns=numerical_columns)  # Usamos las mismas columnas que en X_train
+
+# 2. Predecir con los modelos entrenados
+y_pred_ridge_new = ridge_pipeline.predict(X_new)
+y_pred_lasso_new = lasso_pipeline.predict(X_new)
+y_pred_elasticnet_new = elasticnet_pipeline.predict(X_new)
+
+# 3. Imprimir las predicciones
+print("\nPredicciones con nuevos datos:")
+print(f"Predicciones de Ridge: {y_pred_ridge_new}")
+print(f"Predicciones de Lasso: {y_pred_lasso_new}")
+print(f"Predicciones de ElasticNet: {y_pred_elasticnet_new}")
+
+# 4. Visualización de los coeficientes (si es necesario)
+plt.figure(figsize=(15, 5))
+
+# Coeficientes de Ridge
+plt.subplot(1, 3, 1)
+plt.plot(ridge_pipeline.named_steps['ridge'].coef_, label="Ridge Coefficients")
+plt.title("Ridge Coefficients")
+plt.xlabel("Características")
+plt.ylabel("Valor de los coeficientes")
+
+# Coeficientes de Lasso
+plt.subplot(1, 3, 2)
+plt.plot(lasso_pipeline.named_steps['lasso'].coef_, label="Lasso Coefficients", color='r')
+plt.title("Lasso Coefficients")
+plt.xlabel("Características")
+plt.ylabel("Valor de los coeficientes")
+
+# Coeficientes de ElasticNet
+plt.subplot(1, 3, 3)
+plt.plot(elasticnet_pipeline.named_steps['elasticnet'].coef_, label="ElasticNet Coefficients", color='g')
+plt.title("ElasticNet Coefficients")
+plt.xlabel("Características")
+plt.ylabel("Valor de los coeficientes")
+
+# Guardar la figura
+plt.tight_layout()
+plt.savefig("Regularizacion/coeficientes.png")
 plt.close()
 
-# Crear el contenido en formato Markdown para el archivo README.md
-resultados = """
-# Resultados del Análisis
+# Crear el archivo README.md con los resultados y la imagen
+resultados = f"""
+# Regularización en Modelos de Regresión
 
-## Análisis de Votos
+## Introducción a la Regularización
 
-A continuación se muestran los resultados del análisis de los votos por departamento.
+La **regularización** es una técnica utilizada en la regresión y otros modelos estadísticos para evitar el **sobreajuste (overfitting)**. En modelos de regresión, el sobreajuste ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento y no generaliza bien a datos nuevos. La regularización agrega un término de penalización a la función de costo, lo que ayuda a reducir la complejidad del modelo y mejora su capacidad de generalización.
 
-### Resumen de Votos
+### Tipos de Regularización:
+1. **Ridge** (L2): Penaliza la magnitud de los coeficientes del modelo. Esto ayuda a reducir los efectos de características irrelevantes, pero no las elimina completamente.
+2. **Lasso** (L1): Penaliza la suma de los valores absolutos de los coeficientes. Este tipo de regularización puede llevar algunos coeficientes exactamente a cero, eliminando efectivamente las características menos relevantes.
+3. **ElasticNet**: Combinación de Ridge y Lasso, que penaliza tanto la magnitud (L2) como la suma de los coeficientes absolutos (L1).
 
-| Departamento | Votos A favor | Votos en Contra | Votos Blancos | Votos Nulos | Total de Votos |
-|--------------|---------------|-----------------|---------------|-------------|----------------|
+## Descripción de los Datos
+
+Los datos utilizados provienen de un conjunto de resultados electorales. Cada fila representa los votos recibidos por diferentes candidatos en diversas provincias y distritos. A continuación se detallan las columnas:
+
+- **UBIGEO**: Código único de ubicación geográfica (departamento, provincia, distrito).
+- **DEPARTAMENTO**: El departamento del país.
+- **PROVINCIA**: La provincia dentro del departamento.
+- **DISTRITO**: El distrito dentro de la provincia.
+- **AUTORIDAD EN CONSULTA**: Nombre del candidato o autoridad.
+- **ELECTORES**: Total de electores registrados.
+- **VOTOS SI**: Votos a favor del candidato.
+- **VOTOS NO**: Votos en contra.
+- **VOTOS BLANCOS**: Votos en blanco.
+- **VOTOS NULOS**: Votos nulos.
+- **VOTOS IMPUGNADOS**: Votos impugnados.
+- **VOTOS TOTAL**: Total de votos, incluyendo todos los anteriores.
+
+Un ejemplo de fila de datos es el siguiente:
+
+250203 | UCAYALI | PADRE ABAD | CURIMANA | ALCIDEs RUBEN RODRIGUEZ INGA | 1126 | 441 | 199 | 68 | 150 | 0 | 858
+
+En este caso, el número de **votos a favor (VOTOS SI)** es 441. Este es el valor que estamos tratando de predecir utilizando los modelos de regresión.
+
+## Resultados del Modelo
+
+Hemos entrenado tres modelos de regresión con regularización: **Ridge**, **Lasso** y **ElasticNet**. A continuación se presentan los **MSE (Mean Squared Error)** de cada modelo en los datos de prueba.
+
+MSE (Ridge): {mse_ridge} MSE (Lasso): {mse_lasso} MSE (ElasticNet): {mse_elasticnet}
+
+
+### Predicciones para un nuevo conjunto de datos:
+
+Ingresamos los siguientes datos para hacer predicciones con cada uno de los modelos:
+
+| **ELECTORES** | **VOTOS NO** | **VOTOS BLANCOS** | **VOTOS NULOS** | **VOTOS IMPUGNADOS** | **VOTOS TOTAL** |
+|---------------|--------------|-------------------|-----------------|----------------------|-----------------|
+| 1126          | 441          | 199               | 68              | 150                  | 858             |
+
+Las predicciones realizadas por cada modelo fueron:
+
+Predicciones de Ridge: {y_pred_ridge_new} Predicciones de Lasso: {y_pred_lasso_new} Predicciones de ElasticNet: {y_pred_elasticnet_new}
+
+Como se puede observar, el modelo de **Lasso** proporciona la predicción más cercana al valor real de **441** (votos a favor), lo que indica que es el modelo que mejor se ajusta a estos datos específicos.
+
+### Visualización de los Coeficientes
+
+A continuación, se presentan los coeficientes de cada modelo:
+
+![Coeficientes de los Modelos](coeficientes.png)
+
+### Conclusión
+
+El modelo **Lasso**, con su capacidad para penalizar más fuertemente las características irrelevantes, ha mostrado ser el más adecuado para esta predicción en particular, ya que su error cuadrático medio (MSE) es significativamente menor que el de los modelos **Ridge** y **ElasticNet**.
+
+Es importante destacar que la elección del modelo más adecuado puede depender del contexto específico del conjunto de datos y los objetivos del análisis. Sin embargo, en este caso, **Lasso** parece ser el mejor modelo en términos de precisión y ajuste a los datos.
 """
 
-# Añadir los resultados de la tabla por departamento
-for _, row in resultados_analisis.iterrows():
-    resultados += f"| {row['DEPARTAMENTO']} | {row['VOTOS SI']} | {row['VOTOS NO']} | {row['VOTOS BLANCOS']} | {row['VOTOS NULOS']} | {row['VOTOS TOTAL']} |\n"
-
-# Agregar el gráfico de votos apilados
-resultados += """
-### Gráfico de Votos Apilados
-
-A continuación se presenta un gráfico con la distribución de votos por departamento.
-
-![Gráfico de Votos Apilados](Regularizacion/votos_apilados.png)
-
-## Conclusión
-
-Los resultados muestran un panorama interesante de la distribución de votos en diversos departamentos. Se observa que algunos departamentos tienen una distribución más balanceada entre los votos a favor y en contra, mientras que otros tienen una diferencia más pronunciada.
-"""
-
-# Guardar los resultados en el archivo README.md
+# Guardar los resultados en un archivo README.md
 with open("Regularizacion/README.md", "w") as f:
     f.write(resultados)
-
-print("Análisis y resultados guardados correctamente en 'README.md'.")

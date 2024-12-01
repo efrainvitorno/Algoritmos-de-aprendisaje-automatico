@@ -85,7 +85,3 @@ resultados += (
 with open("Valor esperado condicional/README.md", "w") as f:
     f.write(resultados)
 
-# --------------------------------------------------------------------------------
-# Imprimir los resultados
-# --------------------------------------------------------------------------------
-print(resultados)

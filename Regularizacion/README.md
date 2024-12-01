@@ -1,45 +1,67 @@
 
-# Resultados del An谩lisis
+# Regularizaci髇 en Modelos de Regresi髇
 
-## An谩lisis de Votos
+## Introducci髇 a la Regularizaci髇
 
-A continuaci贸n se muestran los resultados del an谩lisis de los votos por departamento.
+La **regularizaci髇** es una t閏nica utilizada en la regresi髇 y otros modelos estad韘ticos para evitar el **sobreajuste (overfitting)**. En modelos de regresi髇, el sobreajuste ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento y no generaliza bien a datos nuevos. La regularizaci髇 agrega un t閞mino de penalizaci髇 a la funci髇 de costo, lo que ayuda a reducir la complejidad del modelo y mejora su capacidad de generalizaci髇.
 
-### Resumen de Votos
+### Tipos de Regularizaci髇:
+1. **Ridge** (L2): Penaliza la magnitud de los coeficientes del modelo. Esto ayuda a reducir los efectos de caracter韘ticas irrelevantes, pero no las elimina completamente.
+2. **Lasso** (L1): Penaliza la suma de los valores absolutos de los coeficientes. Este tipo de regularizaci髇 puede llevar algunos coeficientes exactamente a cero, eliminando efectivamente las caracter韘ticas menos relevantes.
+3. **ElasticNet**: Combinaci髇 de Ridge y Lasso, que penaliza tanto la magnitud (L2) como la suma de los coeficientes absolutos (L1).
 
-| Departamento | Votos A favor | Votos en Contra | Votos Blancos | Votos Nulos | Total de Votos |
-|--------------|---------------|-----------------|---------------|-------------|----------------|
-| AMAZONAS | 21184 | 9772 | 3132 | 1171 | 35259 |
-| ANCASH | 34788 | 22209 | 8524 | 2976 | 68497 |
-| APURIMAC | 9642 | 5322 | 2494 | 1323 | 18781 |
-| AREQUIPA | 9025 | 6207 | 1624 | 573 | 17429 |
-| AYACUCHO | 8283 | 5184 | 2661 | 936 | 17064 |
-| CAJAMARCA | 60196 | 48669 | 12770 | 4463 | 126098 |
-| CUSCO | 22166 | 11250 | 5062 | 1271 | 39749 |
-| HUANCAVELICA | 10161 | 7469 | 3438 | 940 | 22008 |
-| HUANUCO | 11806 | 7730 | 2132 | 1160 | 22828 |
-| ICA | 2460 | 2241 | 423 | 150 | 5274 |
-| JUNIN | 20751 | 8396 | 4360 | 1367 | 34874 |
-| LA LIBERTAD | 13460 | 14461 | 3872 | 2085 | 33878 |
-| LAMBAYEQUE | 16902 | 17088 | 3980 | 1979 | 39949 |
-| LIMA | 51710 | 36937 | 9244 | 3465 | 101356 |
-| LORETO | 37322 | 19548 | 5119 | 1526 | 63515 |
-| MADRE DE DIOS | 2223 | 1764 | 538 | 165 | 4690 |
-| MOQUEGUA | 5786 | 1939 | 842 | 187 | 8754 |
-| PASCO | 12281 | 7953 | 1578 | 1018 | 22830 |
-| PIURA | 4450 | 5184 | 1877 | 771 | 12282 |
-| PUNO | 30355 | 14816 | 4280 | 2602 | 52053 |
-| SAN MARTIN | 17081 | 18157 | 2798 | 1160 | 39196 |
-| TACNA | 134 | 168 | 3 | 6 | 311 |
-| TUMBES | 10413 | 7244 | 2533 | 818 | 21008 |
-| UCAYALI | 12435 | 3237 | 3995 | 925 | 20592 |
+## Descripci髇 de los Datos
 
-### Gr谩fico de Votos Apilados
+Los datos utilizados provienen de un conjunto de resultados electorales. Cada fila representa los votos recibidos por diferentes candidatos en diversas provincias y distritos. A continuaci髇 se detallan las columnas:
 
-A continuaci贸n se presenta un gr谩fico con la distribuci贸n de votos por departamento.
+- **UBIGEO**: C骴igo 鷑ico de ubicaci髇 geogr醘ica (departamento, provincia, distrito).
+- **DEPARTAMENTO**: El departamento del pa韘.
+- **PROVINCIA**: La provincia dentro del departamento.
+- **DISTRITO**: El distrito dentro de la provincia.
+- **AUTORIDAD EN CONSULTA**: Nombre del candidato o autoridad.
+- **ELECTORES**: Total de electores registrados.
+- **VOTOS SI**: Votos a favor del candidato.
+- **VOTOS NO**: Votos en contra.
+- **VOTOS BLANCOS**: Votos en blanco.
+- **VOTOS NULOS**: Votos nulos.
+- **VOTOS IMPUGNADOS**: Votos impugnados.
+- **VOTOS TOTAL**: Total de votos, incluyendo todos los anteriores.
 
-![Gr谩fico de Votos Apilados](votos_apilados.png)
+Un ejemplo de fila de datos es el siguiente:
 
-## Conclusi贸n
+250203 | UCAYALI | PADRE ABAD | CURIMANA | ALCIDEs RUBEN RODRIGUEZ INGA | 1126 | 441 | 199 | 68 | 150 | 0 | 858
 
-Los resultados muestran un panorama interesante de la distribuci贸n de votos en diversos departamentos. Se observa que algunos departamentos tienen una distribuci贸n m谩s balanceada entre los votos a favor y en contra, mientras que otros tienen una diferencia m谩s pronunciada.
+En este caso, el n鷐ero de **votos a favor (VOTOS SI)** es 441. Este es el valor que estamos tratando de predecir utilizando los modelos de regresi髇.
+
+## Resultados del Modelo
+
+Hemos entrenado tres modelos de regresi髇 con regularizaci髇: **Ridge**, **Lasso** y **ElasticNet**. A continuaci髇 se presentan los **MSE (Mean Squared Error)** de cada modelo en los datos de prueba.
+
+MSE (Ridge): 239.24802044585567 MSE (Lasso): 40.34049330838059 MSE (ElasticNet): 44603.56133025498
+
+
+### Predicciones para un nuevo conjunto de datos:
+
+Ingresamos los siguientes datos para hacer predicciones con cada uno de los modelos:
+
+| **ELECTORES** | **VOTOS NO** | **VOTOS BLANCOS** | **VOTOS NULOS** | **VOTOS IMPUGNADOS** | **VOTOS TOTAL** |
+|---------------|--------------|-------------------|-----------------|----------------------|-----------------|
+| 1126          | 441          | 199               | 68              | 150                  | 858             |
+
+Las predicciones realizadas por cada modelo fueron:
+
+Predicciones de Ridge: [430.19016281] Predicciones de Lasso: [444.46732659] Predicciones de ElasticNet: [541.23592787]
+
+Como se puede observar, el modelo de **Lasso** proporciona la predicci髇 m醩 cercana al valor real de **441** (votos a favor), lo que indica que es el modelo que mejor se ajusta a estos datos espec韋icos.
+
+### Visualizaci髇 de los Coeficientes
+
+A continuaci髇, se presentan los coeficientes de cada modelo:
+
+![Coeficientes de los Modelos](coeficientes.png)
+
+### Conclusi髇
+
+El modelo **Lasso**, con su capacidad para penalizar m醩 fuertemente las caracter韘ticas irrelevantes, ha mostrado ser el m醩 adecuado para esta predicci髇 en particular, ya que su error cuadr醫ico medio (MSE) es significativamente menor que el de los modelos **Ridge** y **ElasticNet**.
+
+Es importante destacar que la elecci髇 del modelo m醩 adecuado puede depender del contexto espec韋ico del conjunto de datos y los objetivos del an醠isis. Sin embargo, en este caso, **Lasso** parece ser el mejor modelo en t閞minos de precisi髇 y ajuste a los datos.
