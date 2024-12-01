@@ -43,6 +43,14 @@ prediccion_nuevo_dato = knn.predict(nuevo_dato_escalado)
 
 # Guardar los resultados en una variable para escribirlos en un archivo
 resultados = f"""
+El aprendizaje estadístico es un conjunto de métodos y técnicas que permiten a las má-
+quinas (computadoras) aprender patrones a partir de datos para hacer predicciones, tomar
+decisiones o identificar relaciones subyacentes en la información. Se basa en principios es-
+tadísticos y matemáticos, y busca construir modelos que puedan generalizarse bien a datos
+nuevos, es decir, ser precisos no solo en el conjunto de datos de entrenamiento, sino también
+cuando se aplican a datos desconocidos.
+---
+### Tecnica KNN para la prediccion.
 ### Resultados del modelo KNN:
 - MAE: {mae:.2f}
 - MSE: {mse:.2f}
