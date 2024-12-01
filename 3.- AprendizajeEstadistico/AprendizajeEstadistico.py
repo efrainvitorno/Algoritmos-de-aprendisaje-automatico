@@ -61,7 +61,7 @@ cuando se aplican a datos desconocidos.
 """
 
 # Guardar los resultados y las predicciones en un archivo .md
-with open("AprendizajeEstadistico\README.md", "w") as f:
+with open("3.- AprendizajeEstadistico\README.md", "w") as f:
     f.write(resultados)
 
 # Imprimir los resultados
