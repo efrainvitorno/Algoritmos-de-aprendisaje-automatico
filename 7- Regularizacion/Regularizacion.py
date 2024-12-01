@@ -166,4 +166,3 @@ Es importante destacar que la elección del modelo más adecuado puede depender 
 # Guardar los resultados en un archivo README.md
 with open("Regularizacion/README.md", "w") as f:
     f.write(resultados)
-print("prueba")
