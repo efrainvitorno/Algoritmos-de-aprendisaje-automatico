@@ -1,11 +1,8 @@
 <<<<<<< Updated upstream
 import numpy as np
 import matplotlib.pyplot as plt
-import pandas as pd
-from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
-from sklearn.datasets import make_blobs, load_iris, load_wine, load_digits
+import pandas as pd
 import os
 =======
 # Importar las librerías necesarias
@@ -18,6 +15,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 >>>>>>> Stashed changes
 
+<<<<<<< Updated upstream:9.- MaquinaSoporteVectorial/maquina_soporte_vectorial.py
 # Función para escribir resultados en el README.md
 def escribir_resultados(texto):
     with open("MaquinaVectorial/README.md", "a", encoding="utf-8") as f:
@@ -45,20 +43,29 @@ guardar_en_readme("## Ejercicio 1: Clasificación SVM con el dataset desde archi
 data = pd.read_csv('archivo.csv', delimiter=';')
 
 # Imprimir las primeras filas del DataFrame para verificar que se ha leído correctamente
+=======
+# Paso 1: Cargar los datos desde un archivo CSV
+data = pd.read_csv("archivo.csv", sep=";")
+print("Primeras filas del DataFrame:")
+>>>>>>> Stashed changes:MaquinaVectorial/maquina_soporte_vectorial.py
 print(data.head())
+print("Nombres de las columnas:")
+print(data.columns)
 
-# Convertir columnas categóricas a numéricas usando one-hot encoding
-data = pd.get_dummies(data, columns=['DEPARTAMENTO', 'PROVINCIA', 'DISTRITO', 'AUTORIDAD EN CONSULTA'])
+resultados = []  # Lista para almacenar descripciones de los resultados
 
-# Asumiendo que las características están en todas las columnas menos la última
-X = data.iloc[:, :-1].values
-# Asumiendo que las etiquetas están en la última columna
-y = data.iloc[:, -1].values
+# Validar que las columnas requeridas existan
+if "VOTOS SI" in data.columns and "VOTOS NO" in data.columns:
+    # Paso 2: Seleccionar las características (X) y etiquetas (y)
+    X = data[["VOTOS SI", "VOTOS NO"]].values
+    y = data["AUTORIDAD EN CONSULTA"].factorize()[0]  # Convertir etiquetas categóricas a numéricas
 
-# Verificar las dimensiones de X e y
-print(f"Dimensiones de X: {X.shape}")
-print(f"Dimensiones de y: {y.shape}")
+    # Paso 3: Crear una malla para graficar los límites de decisión
+    x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
+    y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
+    xx, yy = np.meshgrid(np.linspace(x_min, x_max, 100), np.linspace(y_min, y_max, 100))
 
+<<<<<<< Updated upstream:9.- MaquinaSoporteVectorial/maquina_soporte_vectorial.py
 # Dividir en conjunto de entrenamiento y prueba
 =======
 # Dividir el conjunto de datos en entrenamiento y prueba
@@ -313,3 +320,68 @@ escribir_resultados("1. La precisión en validación cruzada muestra cómo de bi
 escribir_resultados("2. La precisión en el conjunto de prueba permite evaluar la capacidad del mejor modelo para predecir nuevas instancias.")
 escribir_resultados("3. Comparando los kernels 'linear' y 'rbf', puedes observar cuál tiene mejor rendimiento en términos de generalización y precisión.")
 >>>>>>> Stashed changes
+=======
+    # Función para graficar los límites de decisión
+    def graficar_svm(model, title, file_name):
+        Z = model.predict(np.c_[xx.ravel(), yy.ravel()])
+        Z = Z.reshape(xx.shape)
+
+        plt.contourf(xx, yy, Z, alpha=0.8, cmap=plt.cm.coolwarm)
+        plt.scatter(X[:, 0], X[:, 1], c=y, edgecolors='k', cmap=plt.cm.coolwarm)
+        plt.title(title)
+        plt.xlabel("VOTOS SI")
+        plt.ylabel("VOTOS NO")
+        plt.savefig(file_name)  # Guardar gráfico como archivo
+        plt.close()
+
+    # Paso 4: Probar diferentes kernels y valores de C
+    kernels = ['linear', 'rbf', 'poly']
+    valores_C = [0.1, 1, 10]
+
+    for kernel in kernels:
+        resultados.append(f"\n### Resultados con kernel '{kernel}':")
+        for C in valores_C:
+            resultados.append(f"- Entrenando con C={C}")
+            if kernel == 'poly':
+                model = SVC(kernel=kernel, C=C, degree=3)  # Especificar el grado solo para 'poly'
+            else:
+                model = SVC(kernel=kernel, C=C)  # Sin 'degree' para otros kernels
+            model.fit(X, y)
+
+            # Nombre del archivo de gráfico
+            file_name = f"MaquinaVectorial/limite_decision_{kernel}_C{C}.png"
+            graficar_svm(model, f"SVM con kernel '{kernel}', C={C}", file_name)
+            resultados.append(f"  - Gráfico guardado: {file_name}")
+
+    # Crear el contenido del README.md
+    contenido_readme = f"""
+# Resultados del Ejercicio 2: Visualización de Límites de Decisión
+
+En este ejercicio, se entrenaron máquinas de soporte vectorial (SVM) para visualizar cómo diferentes kernels y valores del parámetro de regularización `C` afectan los límites de decisión en un espacio bidimensional.
+
+## Configuración del Ejercicio
+
+- **Características (X):** Columnas `VOTOS SI` y `VOTOS NO` del conjunto de datos.
+- **Etiquetas (y):** Columna `AUTORIDAD EN CONSULTA` convertida a valores numéricos.
+- **Kernels probados:** `linear`, `rbf`, `poly` (grado 3).
+- **Valores de `C`:** 0.1, 1, 10.
+
+## Observaciones y Resultados
+
+{''.join(resultados)}
+
+---
+
+_Proyecto desarrollado como parte del Ejercicio 2 en la carpeta **MaquinaVectorial**._
+    """
+
+    # Guardar el README.md
+    os.makedirs("MaquinaVectorial", exist_ok=True)
+    with open("MaquinaVectorial/README.md", "w", encoding="utf-8") as archivo:
+        archivo.write(contenido_readme)
+
+    print("README.md y gráficos guardados exitosamente en la carpeta 'MaquinaVectorial'.")
+
+else:
+    print("Error: Las columnas 'VOTOS SI' y 'VOTOS NO' no se encuentran en el archivo CSV.")
+>>>>>>> Stashed changes:MaquinaVectorial/maquina_soporte_vectorial.py
