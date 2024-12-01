@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
@@ -42,8 +43,11 @@ for C in valores_C:
     y_pred = model.predict(X_test)
     resultados_C[C] = accuracy_score(y_test, y_pred)
 
+# Crear el directorio si no existe
+os.makedirs('9.- MaquinaSoporteVectorial', exist_ok=True)
+
 # Guardar los resultados en el archivo README.md en formato de tabla
-with open('MaquinaVectorial/README.md', 'w') as f:
+with open('9.- MaquinaSoporteVectorial/README.md', 'w') as f:
     f.write("# Resultados detallados del modelo SVM\n\n")
     
     # Tabla de resultados con precisión para kernel 'linear' y 'rbf'
@@ -56,6 +60,6 @@ with open('MaquinaVectorial/README.md', 'w') as f:
     for C, precision in resultados_C.items():
         f.write(f"| SVM Modelo con RBF        | rbf        | {C}            | {precision:.2f}         |\n")
     
-    f.write("\nResultados guardados en MaquinaVectorial/README.md")
+    f.write("\nResultados guardados en 9.- MaquinaSoporteVectorial/README.md")
 
-print("\nResultados guardados en MaquinaVectorial/README.md")
+print("\nResultados guardados en 9.- MaquinaSoporteVectorial/README.md")
