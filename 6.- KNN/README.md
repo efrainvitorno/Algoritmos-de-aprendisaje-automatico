@@ -8,21 +8,25 @@ Este proyecto analiza los resultados de la revocatoria distrital utilizando un m
 ![Matriz de Confusión](./matriz_confusion.png)
 
 ### Gráfico de Precisión
-![Gráfico de Precisión](./precision_grafico.png)
+![Gráfico de Precisión](./KNN_precision_vs_K.png)
 
+## Reporte de Clasificación KNN
 
-Reporte de clasificación:
-               precision    recall  f1-score   support
+| Clase | Precisión | Recall | F1-Score | Soporte |
+|-------|-----------|--------|----------|---------|
+| **0** | 90%       | 83%    | 86%      | 42      |
+| **1** | 95%       | 97%    | 96%      | 145     |
 
-           0       0.90      0.83      0.86        42
-           1       0.95      0.97      0.96       145
+### Métricas Generales:
 
-    accuracy                           0.94       187
-   macro avg       0.93      0.90      0.91       187
-weighted avg       0.94      0.94      0.94       187
-
-Matriz de confusión:
- [[ 35   7]
- [  4 141]]
+- **Precisión Total (Accuracy):** 94%
+- **Promedio Macro (Macro avg):**
+  - **Precisión:** 93%
+  - **Recall:** 90%
+  - **F1-Score:** 91%
+- **Promedio Ponderado (Weighted avg):**
+  - **Precisión:** 94%
+  - **Recall:** 94%
+  - **F1-Score:** 94%
 
  
