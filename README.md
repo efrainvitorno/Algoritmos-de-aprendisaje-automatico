@@ -14,44 +14,46 @@
 # Estructura del Proyecto
 
 ## 1. [VariablesAleatorias](1.-%20VariablesAleatorias)
-- [README.md](1.-%20VariablesAleatorias/README.md): 📄 Documentación y resultados del análisis de votos utilizando variables aleatorias.
-- [variableAleatorias.py](1.-%20VariablesAleatorias/variableAleatorias.py): 🐍 Script en Python para el análisis de votos utilizando variables aleatorias.
+- [resultados de la implementacion](1.-%20VariablesAleatorias/README.md): 📄 Documentación y resultados del análisis de votos utilizando variables aleatorias. Incluye un resumen general de los votos y varios ejercicios de análisis estadístico.
+- [Codigo de implementacion](1.-%20VariablesAleatorias/variableAleatorias.py): 🐍 Script en Python para el análisis de votos utilizando variables aleatorias. Realiza cálculos estadísticos y genera gráficos.
 
 ## 2. [Valor esperado](2.-%20Valor%20esperado)
-- [README.md](2.-%20Valor%20esperado/README.md): 📄 Documentación y resultados del cálculo del valor esperado.
-- [Valor_esperado.py](2.-%20Valor%20esperado/Valor_esperado.py): 🐍 Script en Python para el cálculo del valor esperado.
+- [resultados de la implementacion](2.-%20Valor%20esperado/README.md): 📄 Documentación y resultados del cálculo del valor esperado. Explica el concepto de valor esperado y presenta los resultados obtenidos.
+- [Codigo de implementacion](2.-%20Valor%20esperado/Valor_esperado.py): 🐍 Script en Python para el cálculo del valor esperado. Realiza cálculos y simulaciones para obtener el valor esperado.
 
 ## 3. [AprendizajeEstadistico](3.-%20AprendizajeEstadistico)
-- [README.md](3.-%20AprendizajeEstadistico/README.md): 📄 Documentación y resultados del aprendizaje estadístico.
-- [AprendizajeEstadistico.py](3.-%20AprendizajeEstadistico/AprendizajeEstadistico.py): 🐍 Script en Python para el aprendizaje estadístico.
+- [resultados de la implementacion](3.-%20AprendizajeEstadistico/README.md): 📄 Documentación y resultados del aprendizaje estadístico. Describe los métodos y técnicas utilizadas para el aprendizaje a partir de datos.
+- [Codigo de implementacion](3.-%20AprendizajeEstadistico/AprendizajeEstadistico.py): 🐍 Script en Python para el aprendizaje estadístico. Implementa modelos de aprendizaje y realiza predicciones.
 
 ## 4. [RegresionLinealMultiple](4.-%20RegresionLinealMultiple)
-- [README.md](4.-%20RegresionLinealMultiple/README.md): 📄 Documentación y resultados de la regresión lineal múltiple.
-- [RegresionLinealMultiple.py](4.-%20RegresionLinealMultiple/RegresionLinealMultiple.py): 🐍 Script en Python para la regresión lineal múltiple.
+- [resultados de la implementacion](4.-%20RegresionLinealMultiple/README.md): 📄 Documentación y resultados de la regresión lineal múltiple. Presenta los resultados del modelo de regresión aplicado a los datos.
+- [Codigo de implementacion](4.-%20RegresionLinealMultiple/RegresionLinealMultiple.py): 🐍 Script en Python para la regresión lineal múltiple. Implementa el modelo de regresión y analiza los resultados.
 
 ## 5. [Valor esperado condicional](5.-%20ValorEsperadoCondicional)
-- [README.md](5.-%20ValorEsperadoCondicional/README.md): 📄 Documentación y resultados del cálculo del valor esperado condicional.
-- [Valor_Esperado_Condicional.py](5.-%20ValorEsperadoCondicional/Valor_Esperado_Condicional.py): 🐍 Script en Python para el cálculo del valor esperado condicional.
+- [resultados de la implementacion](5.-%20ValorEsperadoCondicional/README.md): 📄 Documentación y resultados del cálculo del valor esperado condicional. Explica el concepto y presenta los resultados obtenidos.
+- [Codigo de implementacion](5.-%20ValorEsperadoCondicional/Valor_Esperado_Condicional.py): 🐍 Script en Python para el cálculo del valor esperado condicional. Realiza cálculos y simulaciones para obtener el valor esperado condicional.
 
 ## 6. [KNN](6.-%20KNN)
-- [README.md](6.-%20KNN/README.md): 📄 Documentación y resultados del análisis de la revocatoria utilizando el modelo KNN.
-- [KNN.py](6.-%20KNN/KNN.py): 🐍 Script en Python para el análisis de la revocatoria utilizando el modelo KNN.
+- [resultados de la implementacion](6.-%20KNN/README.md): 📄 Documentación y resultados del análisis de la revocatoria utilizando el modelo KNN. Presenta los resultados del modelo KNN aplicado a los datos.
+- [Codigo de implementacion](6.-%20KNN/KNN.py): 🐍 Script en Python para el análisis de la revocatoria utilizando el modelo KNN. Implementa el modelo KNN y analiza los resultados.
 
 ## 7. [Regularizacion](7-%20Regularizacion)
-- [README.md](7-%20Regularizacion/README.md): 📄 Documentación y resultados de la regularización en modelos de regresión.
-- [Regularizacion.py](7-%20Regularizacion/Regularizacion.py): 🐍 Script en Python para la regularización en modelos de regresión.
+- [resultados de la implementacion](7-%20Regularizacion/README.md): 📄 Documentación y resultados de la regularización en modelos de regresión. Explica los métodos de regularización y presenta los resultados obtenidos.
+- [Codigo de implementacion](7-%20Regularizacion/Regularizacion.py): 🐍 Script en Python para la regularización en modelos de regresión. Implementa los métodos de regularización y analiza los resultados.
 
 ## 8. [Arbol de decision](8.-%20Arbol%20de%20decision)
-- [README.md](8.-%20Arbol%20de%20decision/README.md): 📄 Documentación y resultados del análisis de la revocatoria utilizando un árbol de decisión.
-- [Arbol_de_decision.py](8.-%20Arbol%20de%20decision/Arbol_de_decision.py): 🐍 Script en Python para el análisis de la revocatoria utilizando un árbol de decisión.
+- [resultados de la implementacion](8.-%20Arbol%20de%20decision/README.md): 📄 Documentación y resultados del análisis de la revocatoria utilizando un árbol de decisión. Presenta los resultados del modelo de árbol de decisión aplicado a los datos.
+- [Codigo de implementacion](8.-%20Arbol%20de%20decision/Arbol_de_decision.py): 🐍 Script en Python para el análisis de la revocatoria utilizando un árbol de decisión. Implementa el modelo de árbol de decisión y analiza los resultados.
 
 ## 9. [MaquinaSoporteVectorial](9.-%20MaquinaSoporteVectorial)
-- [README.md](9.-%20MaquinaSoporteVectorial/README.md): 📄 Documentación y resultados del análisis de la revocatoria utilizando una máquina de soporte vectorial.
+- [resultados de la implementacion](9.-%20MaquinaSoporteVectorial/README.md): 📄 Documentación y resultados del análisis de la revocatoria utilizando una máquina de soporte vectorial. Presenta los resultados del modelo SVM aplicado a los datos.
 - [archivo.csv](9.-%20MaquinaSoporteVectorial/archivo.csv): 📊 Archivo CSV con datos utilizados para el análisis.
-- [MaquinaVectorial.py](9.-%20MaquinaSoporteVectorial/MaquinaVectorial.py): 🐍 Script en Python para el análisis de la revocatoria utilizando una máquina de soporte vectorial.
-- [ejemplo2.py](9.-%20MaquinaSoporteVectorial/ejemplo2.py): 🐍 Ejemplo adicional de uso de SVM.
-- [ejemplo3.py](9.-%20MaquinaSoporteVectorial/ejemplo3.py): 🐍 Ejemplo adicional de uso de SVM.
-- [ejemplo4.py](9.-%20MaquinaSoporteVectorial/ejemplo4.py): 🐍 Ejemplo adicional de uso de SVM.
+- [Codigo de implementacion](9.-%20MaquinaSoporteVectorial/MaquinaVectorial.py): 🐍 Script en Python para el análisis de la revocatoria utilizando una máquina de soporte vectorial. Implementa el modelo SVM y analiza los resultados.
+- [Codigo de implementacion](9.-%20MaquinaSoporteVectorial/ejemplo2.py): 🐍 Ejemplo adicional de uso de SVM. Presenta un ejemplo práctico de la implementación del modelo SVM.
+- [Codigo de implementacion](9.-%20MaquinaSoporteVectorial/ejemplo3.py): 🐍 Ejemplo adicional de uso de SVM. Presenta un ejemplo práctico de la implementación del modelo SVM.
+- [Codigo de implementacion](9.-%20MaquinaSoporteVectorial/ejemplo4.py): 🐍 Ejemplo adicional de uso de SVM. Presenta un ejemplo práctico de la implementación del modelo SVM.
+
+
 
 ## Contenido del archivo CSV
 
