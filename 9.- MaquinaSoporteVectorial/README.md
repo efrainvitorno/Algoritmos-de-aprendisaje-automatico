@@ -37,17 +37,17 @@ Resultados guardados en 9.- MaquinaSoporteVectorial/README.md
 Extender el uso de SVM a problemas con más de dos clases. Experimenta con diferentes valores de gamma y observa cómo afectan los resultados.
 Prueba con otros datasets disponibles en sklearn, como wine o digits.
 
-| Modelo | Kernel | Gamma | Precisión |
-|--------|--------|-------|-----------|
-| SVM Modelo con rbf | rbf | 0.1 | 1.00 |
-| SVM Modelo con rbf | rbf | 1 | 1.00 |
-| SVM Modelo con rbf | rbf | 10 | 1.00 |
-| SVM Modelo con rbf | rbf | 0.1 | 1.00 |
-| SVM Modelo con rbf | rbf | 1 | 1.00 |
-| SVM Modelo con rbf | rbf | 10 | 0.98 |
-| SVM Modelo con rbf | rbf | 0.1 | 0.41 |
-| SVM Modelo con rbf | rbf | 1 | 0.39 |
-| SVM Modelo con rbf | rbf | 10 | 0.39 |
-| SVM Modelo con rbf | rbf | 0.1 | 0.09 |
-| SVM Modelo con rbf | rbf | 1 | 0.09 |
-| SVM Modelo con rbf | rbf | 10 | 0.09 |
+| Dataset | Kernel | Gamma | Precisión |
+|---------|--------|-------|-----------|
+| archivo.csv | rbf | 0.1 | 1.00 |
+| archivo.csv | rbf | 1 | 1.00 |
+| archivo.csv | rbf | 10 | 1.00 |
+| iris | rbf | 0.1 | 1.00 |
+| iris | rbf | 1 | 1.00 |
+| iris | rbf | 10 | 0.98 |
+| wine | rbf | 0.1 | 0.41 |
+| wine | rbf | 1 | 0.39 |
+| wine | rbf | 10 | 0.39 |
+| digits | rbf | 0.1 | 0.09 |
+| digits | rbf | 1 | 0.09 |
+| digits | rbf | 10 | 0.09 |
