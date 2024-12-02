@@ -46,3 +46,22 @@ Prueba con otros datasets disponibles en sklearn, como wine o digits.
 | SVM Modelo con rbf | rbf | 0.1 | 0.09 |
 | SVM Modelo con rbf | rbf | 1 | 0.09 |
 | SVM Modelo con rbf | rbf | 10 | 0.09 |
+
+## Resultados del Ejercicio 3: Clasificación multiclase con SVM
+Extender el uso de SVM a problemas con más de dos clases. Experimenta con diferentes valores de gamma y observa cómo afectan los resultados.
+Prueba con otros datasets disponibles en sklearn, como wine o digits.
+
+| Modelo | Kernel | Gamma | Precisión |
+|--------|--------|-------|-----------|
+| SVM Modelo con rbf | rbf | 0.1 | 1.00 |
+| SVM Modelo con rbf | rbf | 1 | 1.00 |
+| SVM Modelo con rbf | rbf | 10 | 1.00 |
+| SVM Modelo con rbf | rbf | 0.1 | 1.00 |
+| SVM Modelo con rbf | rbf | 1 | 1.00 |
+| SVM Modelo con rbf | rbf | 10 | 0.98 |
+| SVM Modelo con rbf | rbf | 0.1 | 0.41 |
+| SVM Modelo con rbf | rbf | 1 | 0.39 |
+| SVM Modelo con rbf | rbf | 10 | 0.39 |
+| SVM Modelo con rbf | rbf | 0.1 | 0.09 |
+| SVM Modelo con rbf | rbf | 1 | 0.09 |
+| SVM Modelo con rbf | rbf | 10 | 0.09 |

@@ -59,14 +59,12 @@ for name, dataset in datasets_to_try.items():
     X, y = dataset.data, dataset.target
     resultados.extend(entrenar_y_evaluar(X, y, name))
 
-# Imprimir los resultados en formato de tabla
-for resultado in resultados:
-    print(resultado)
-
-# Guardar los resultados en el archivo README.md
-with open('9.- MaquinaSoporteVectorial/README.md', 'a') as f:
+# Guardar los resultados en el archivo README.md en formato de tabla
+with open('9.- MaquinaSoporteVectorial/README.md', 'a', encoding='utf-8') as f:
     f.write("\n## Resultados del Ejercicio 3: Clasificación multiclase con SVM\n")
     f.write("Extender el uso de SVM a problemas con más de dos clases. Experimenta con diferentes valores de gamma y observa cómo afectan los resultados.\n")
     f.write("Prueba con otros datasets disponibles en sklearn, como wine o digits.\n")
+    f.write("\n| Modelo | Kernel | Gamma | Precisión |\n")
+    f.write("|--------|--------|-------|-----------|\n")
     for resultado in resultados:
         f.write(resultado + "\n")
