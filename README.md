@@ -13,42 +13,44 @@
 
 # Estructura del Proyecto
 
-## 1. [VariablesAleatorias](VariablesAleatorias)
-- [README.md](VariablesAleatorias/README.md): Documentación y resultados del análisis de votos utilizando variables aleatorias.
-- [variableAleatorias.py](VariablesAleatorias/variableAleatorias.py): Script en Python para el análisis de votos utilizando variables aleatorias.
+# Estructura del Proyecto
 
-## 2. [Valor esperado](Valor%20esperado)
-- [README.md](Valor%20esperado/README.md): Documentación y resultados del cálculo del valor esperado.
-- [Valor_esperado.py](Valor%20esperado/Valor_esperado.py): Script en Python para el cálculo del valor esperado.
+## 1. [VariablesAleatorias](1.-%20VariablesAleatorias)
+- [README.md](1.-%20VariablesAleatorias/README.md): Documentación y resultados del análisis de votos utilizando variables aleatorias.
+- [variableAleatorias.py](1.-%20VariablesAleatorias/variableAleatorias.py): Script en Python para el análisis de votos utilizando variables aleatorias.
 
-## 3. [AprendizajeEstadistico](AprendizajeEstadistico)
-- [README.md](AprendizajeEstadistico/README.md): Documentación y resultados del aprendizaje estadístico.
-- [AprendizajeEstadistico.py](AprendizajeEstadistico/AprendizajeEstadistico.py): Script en Python para el aprendizaje estadístico.
+## 2. [Valor esperado](2.-%20Valor%20esperado)
+- [README.md](2.-%20Valor%20esperado/README.md): Documentación y resultados del cálculo del valor esperado.
+- [Valor_esperado.py](2.-%20Valor%20esperado/Valor_esperado.py): Script en Python para el cálculo del valor esperado.
 
-## 4. [RegresionLinealMultiple](RegresionLinealMultiple)
-- [README.md](RegresionLinealMultiple/README.md): Documentación y resultados de la regresión lineal múltiple.
-- [RegresionLinealMultiple.py](RegresionLinealMultiple/RegresionLinealMultiple.py): Script en Python para la regresión lineal múltiple.
+## 3. [AprendizajeEstadistico](3.-%20AprendizajeEstadistico)
+- [README.md](3.-%20AprendizajeEstadistico/README.md): Documentación y resultados del aprendizaje estadístico.
+- [AprendizajeEstadistico.py](3.-%20AprendizajeEstadistico/AprendizajeEstadistico.py): Script en Python para el aprendizaje estadístico.
 
-## 5. [Valor esperado condicional](Valor%20esperado%20condicional)
-- [README.md](Valor%20esperado%20condicional/README.md): Documentación y resultados del cálculo del valor esperado condicional.
-- [Valor_Esperado_Condicional.py](Valor%20esperado%20condicional/Valor_Esperado_Condicional.py): Script en Python para el cálculo del valor esperado condicional.
+## 4. [RegresionLinealMultiple](4.-%20RegresionLinealMultiple)
+- [README.md](4.-%20RegresionLinealMultiple/README.md): Documentación y resultados de la regresión lineal múltiple.
+- [RegresionLinealMultiple.py](4.-%20RegresionLinealMultiple/RegresionLinealMultiple.py): Script en Python para la regresión lineal múltiple.
 
-## 6. [KNN](KNN)
-- [README.md](KNN/README.md): Documentación y resultados del análisis de la revocatoria utilizando el modelo KNN.
-- [KNN.py](KNN/KNN.py): Script en Python para el análisis de la revocatoria utilizando el modelo KNN.
+## 5. [Valor esperado condicional](5.-%20ValorEsperadoCondicional)
+- [README.md](5.-%20ValorEsperadoCondicional/README.md): Documentación y resultados del cálculo del valor esperado condicional.
+- [Valor_Esperado_Condicional.py](5.-%20ValorEsperadoCondicional/Valor_Esperado_Condicional.py): Script en Python para el cálculo del valor esperado condicional.
 
-## 7. [Regularizacion](Regularizacion)
-- [README.md](Regularizacion/README.md): Documentación y resultados de la regularización en modelos de regresión.
-- [Regularizacion.py](Regularizacion/Regularizacion.py): Script en Python para la regularización en modelos de regresión.
+## 6. [KNN](6.-%20KNN)
+- [README.md](6.-%20KNN/README.md): Documentación y resultados del análisis de la revocatoria utilizando el modelo KNN.
+- [KNN.py](6.-%20KNN/KNN.py): Script en Python para el análisis de la revocatoria utilizando el modelo KNN.
 
-## 8. [Arbol de decision](Arbol%20de%20decision)
-- [README.md](Arbol%20de%20decision/README.md): Documentación y resultados del análisis de la revocatoria utilizando un árbol de decisión.
-- [Arbol_de_decision.py](Arbol%20de%20decision/Arbol_de_decision.py): Script en Python para el análisis de la revocatoria utilizando un árbol de decisión.
+## 7. [Regularizacion](7-%20Regularizacion)
+- [README.md](7-%20Regularizacion/README.md): Documentación y resultados de la regularización en modelos de regresión.
+- [Regularizacion.py](7-%20Regularizacion/Regularizacion.py): Script en Python para la regularización en modelos de regresión.
 
-## 9. [MaquinaSoporteVectorial](MaquinaSoporteVectorial)
-- [README.md](MaquinaSoporteVectorial/README.md): Documentación y resultados del análisis de la revocatoria utilizando una máquina de soporte vectorial.
-- [archivo.csv](MaquinaSoporteVectorial/archivo.csv): Archivo CSV con datos utilizados para el análisis.
-- [MaquinaVectorial.py](MaquinaSoporteVectorial/MaquinaVectorial.py): Script en Python para el análisis de la revocatoria utilizando una máquina de soporte vectorial.
+## 8. [Arbol de decision](8.-%20Arbol%20de%20decision)
+- [README.md](8.-%20Arbol%20de%20decision/README.md): Documentación y resultados del análisis de la revocatoria utilizando un árbol de decisión.
+- [Arbol_de_decision.py](8.-%20Arbol%20de%20decision/Arbol_de_decision.py): Script en Python para el análisis de la revocatoria utilizando un árbol de decisión.
+
+## 9. [MaquinaSoporteVectorial](9.-%20MaquinaSoporteVectorial)
+- [README.md](9.-%20MaquinaSoporteVectorial/README.md): Documentación y resultados del análisis de la revocatoria utilizando una máquina de soporte vectorial.
+- [archivo.csv](9.-%20MaquinaSoporteVectorial/archivo.csv): Archivo CSV con datos utilizados para el análisis.
+- [MaquinaVectorial.py](9.-%20MaquinaSoporteVectorial/MaquinaVectorial.py): Script en Python para el análisis de la revocatoria utilizando una máquina de soporte vectorial.
 
 ## Contenido del archivo CSV
 
