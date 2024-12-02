@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 import os
 
@@ -58,3 +58,29 @@ plt.close()  # Cerrar la figura
 
 # Confirmación de que la imagen se guardó correctamente
 print(f"El gráfico de precisión del modelo KNN se ha guardado en: {output_image_path}")
+
+# 9. Obtener el mejor valor de K (el que da la mayor precisión)
+best_k = k_values[accuracies.index(max(accuracies))]
+print(f"El mejor valor de K es: {best_k}")
+
+# 10. Crear y mostrar la matriz de confusión para el mejor valor de K
+best_knn = KNeighborsClassifier(n_neighbors=best_k)
+best_knn.fit(X_train, y_train)
+y_pred_best_k = best_knn.predict(X_test)
+
+# Calcular la matriz de confusión
+cm = confusion_matrix(y_test, y_pred_best_k)
+
+# Mostrar la matriz de confusión
+disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+plt.figure(figsize=(8, 6))
+disp.plot(cmap='Blues')
+plt.title(f'Matriz de Confusión para K={best_k}')
+
+# 11. Guardar la matriz de confusión como imagen
+cm_image_path = os.path.join(output_folder, f'ConfusionMatrix_K{best_k}.png')
+plt.savefig(cm_image_path)  # Guardar la imagen de la matriz de confusión
+plt.close()
+
+# Confirmación de que la imagen de la matriz de confusión se guardó correctamente
+print(f"La matriz de confusión para K={best_k} se ha guardado en: {cm_image_path}")
