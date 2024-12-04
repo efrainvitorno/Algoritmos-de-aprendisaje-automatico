@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import os
 
 # 1. Cargar el archivo CSV (asegúrate de que el archivo esté en el mismo directorio o proporciona la ruta correcta)
-df = pd.read_csv("C:/Users/PC/Downloads/Resultados por distrito de la Revocatoria_Distrital.csv", encoding='ISO-8859-1', sep=';') 
+df = pd.read_csv("archivo.csv", delimiter=";")
 
 # 2. Preprocesamiento
 # Definir las características (features) y la variable objetivo (target)
