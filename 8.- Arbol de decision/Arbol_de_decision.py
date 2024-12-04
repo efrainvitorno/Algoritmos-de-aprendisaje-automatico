@@ -8,8 +8,7 @@ import joblib  # Para guardar el modelo
 
 # 1. Cargar el archivo CSV
 try:
-    df = pd.read_csv("C:/Users/PC/Downloads/Resultados por distrito de la Revocatoria_Distrital.csv", 
-                     encoding='ISO-8859-1', sep=';')
+    df = pd.read_csv("archivo.csv", delimiter=";")
 except FileNotFoundError:
     print("El archivo no se encontró. Verifica la ruta.")
     exit()

@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 
 # Cargar el archivo CSV
-df = pd.read_csv("C:/Users/PC/Downloads/Resultados por distrito de la Revocatoria_Distrital.csv", encoding='ISO-8859-1', sep=';')
+df = pd.read_csv("archivo.csv", delimiter=";")
 
 
 # Preprocesamiento de los datos
