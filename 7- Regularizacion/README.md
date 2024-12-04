@@ -1,18 +1,18 @@
 
-# Regularizaci贸n en Modelos de Regresi贸n
+# Regularizaci髇 en Modelos de Regresi髇
 
-## Introducci贸n a la Regularizaci贸n
+## Introducci髇 a la Regularizaci髇
 
-La **regularizaci贸n** es una t茅cnica utilizada en la regresi贸n y otros modelos estad铆sticos para evitar el **sobreajuste (overfitting)**. En modelos de regresi贸n, el sobreajuste ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento y no generaliza bien a datos nuevos. La regularizaci贸n agrega un t茅rmino de penalizaci贸n a la funci贸n de costo, lo que ayuda a reducir la complejidad del modelo y mejora su capacidad de generalizaci贸n.
+La **regularizaci髇** es una t閏nica utilizada en la regresi髇 y otros modelos estad韘ticos para evitar el **sobreajuste (overfitting)**. En modelos de regresi髇, el sobreajuste ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento y no generaliza bien a datos nuevos. La regularizaci髇 agrega un t閞mino de penalizaci髇 a la funci髇 de costo, lo que ayuda a reducir la complejidad del modelo y mejora su capacidad de generalizaci髇.
 
-### Tipos de Regularizaci贸n:
-1. **Ridge** (L2): Penaliza la magnitud de los coeficientes del modelo. Esto ayuda a reducir los efectos de caracter铆sticas irrelevantes, pero no las elimina completamente.
-2. **Lasso** (L1): Penaliza la suma de los valores absolutos de los coeficientes. Este tipo de regularizaci贸n puede llevar algunos coeficientes exactamente a cero, eliminando efectivamente las caracter铆sticas menos relevantes.
-3. **ElasticNet**: Combinaci贸n de Ridge y Lasso, que penaliza tanto la magnitud (L2) como la suma de los coeficientes absolutos (L1).
+### Tipos de Regularizaci髇:
+1. **Ridge** (L2): Penaliza la magnitud de los coeficientes del modelo. Esto ayuda a reducir los efectos de caracter韘ticas irrelevantes, pero no las elimina completamente.
+2. **Lasso** (L1): Penaliza la suma de los valores absolutos de los coeficientes. Este tipo de regularizaci髇 puede llevar algunos coeficientes exactamente a cero, eliminando efectivamente las caracter韘ticas menos relevantes.
+3. **ElasticNet**: Combinaci髇 de Ridge y Lasso, que penaliza tanto la magnitud (L2) como la suma de los coeficientes absolutos (L1).
 
 ## Resultados del Modelo
 
-Hemos entrenado tres modelos de regresi贸n con regularizaci贸n: **Ridge**, **Lasso** y **ElasticNet**. A continuaci贸n se presentan los **MSE (Mean Squared Error)** de cada modelo en los datos de prueba.
+Hemos entrenado tres modelos de regresi髇 con regularizaci髇: **Ridge**, **Lasso** y **ElasticNet**. A continuaci髇 se presentan los **MSE (Mean Squared Error)** de cada modelo en los datos de prueba.
 
 - MSE (Ridge): 239.24802044585567 
 - MSE (Lasso): 40.34049330838059 
@@ -35,16 +35,16 @@ Las predicciones realizadas por cada modelo fueron:
 
 - Predicciones de ElasticNet: [541.23592787]
 
-Como se puede observar, el modelo de **Lasso** proporciona la predicci贸n m谩s cercana al valor real de **441** (votos a favor), lo que indica que es el modelo que mejor se ajusta a estos datos espec铆ficos.
+Como se puede observar, el modelo de **Lasso** proporciona la predicci髇 m醩 cercana al valor real de **441** (votos a favor), lo que indica que es el modelo que mejor se ajusta a estos datos espec韋icos.
 
-### Visualizaci贸n de los Coeficientes
+### Visualizaci髇 de los Coeficientes
 
-A continuaci贸n, se presentan los coeficientes de cada modelo:
+A continuaci髇, se presentan los coeficientes de cada modelo:
 
 ![Coeficientes de los Modelos](coeficientes.png)
 
-### Conclusi贸n
+### Conclusi髇
 
-El modelo **Lasso**, con su capacidad para penalizar m谩s fuertemente las caracter铆sticas irrelevantes, ha mostrado ser el m谩s adecuado para esta predicci贸n en particular, ya que su error cuadr谩tico medio (MSE) es significativamente menor que el de los modelos **Ridge** y **ElasticNet**.
+El modelo **Lasso**, con su capacidad para penalizar m醩 fuertemente las caracter韘ticas irrelevantes, ha mostrado ser el m醩 adecuado para esta predicci髇 en particular, ya que su error cuadr醫ico medio (MSE) es significativamente menor que el de los modelos **Ridge** y **ElasticNet**.
 
-Es importante destacar que la elecci贸n del modelo m谩s adecuado puede depender del contexto espec铆fico del conjunto de datos y los objetivos del an谩lisis. Sin embargo, en este caso, **Lasso** parece ser el mejor modelo en t茅rminos de precisi贸n y ajuste a los datos.
+Es importante destacar que la elecci髇 del modelo m醩 adecuado puede depender del contexto espec韋ico del conjunto de datos y los objetivos del an醠isis. Sin embargo, en este caso, **Lasso** parece ser el mejor modelo en t閞minos de precisi髇 y ajuste a los datos.

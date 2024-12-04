@@ -107,7 +107,7 @@ plt.ylabel("Valor de los coeficientes")
 
 # Guardar la figura
 plt.tight_layout()
-plt.savefig("Regularizacion/coeficientes.png")
+plt.savefig("7- Regularizacion/coeficientes.png")
 plt.close()
 
 # Crear el archivo README.md con los resultados y la imagen
@@ -164,5 +164,5 @@ Es importante destacar que la elección del modelo más adecuado puede depender 
 """
 
 # Guardar los resultados en un archivo README.md
-with open("7.- Regularizacion/README.md", "w") as f:
+with open("7- Regularizacion/README.md", "w") as f:
     f.write(resultados)
