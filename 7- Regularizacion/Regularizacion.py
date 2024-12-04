@@ -136,7 +136,7 @@ Hemos entrenado tres modelos de regresión con regularización: **Ridge**, **Las
 
 Ingresamos los siguientes datos para hacer predicciones con cada uno de los modelos:
 
-| **ELECTORES** | **VOTOS NO** | **VOTOS BLANCOS** | **VOTOS NULOS** | **VOTOS IMPUGNADOS** | **VOTOS TOTAL** |
+| **ELECTORES** | **VOTOS SI** | **VOTOS BLANCOS** | **VOTOS NULOS** | **VOTOS IMPUGNADOS** | **VOTOS TOTAL** |
 |---------------|--------------|-------------------|-----------------|----------------------|-----------------|
 | 1126          | 441          | 199               | 68              | 150                  | 858             |
 
@@ -164,5 +164,5 @@ Es importante destacar que la elección del modelo más adecuado puede depender 
 """
 
 # Guardar los resultados en un archivo README.md
-with open("Regularizacion/README.md", "w") as f:
+with open("7.- Regularizacion/README.md", "w") as f:
     f.write(resultados)

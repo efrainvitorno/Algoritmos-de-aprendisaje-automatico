@@ -82,6 +82,6 @@ resultados += (
 # --------------------------------------------------------------------------------
 # Guardar los resultados y las predicciones en un archivo .md
 # --------------------------------------------------------------------------------
-with open("Valor esperado condicional/README.md", "w") as f:
+with open("5.- ValorEsperadoCondicional/README.md", "w") as f:
     f.write(resultados)
 
